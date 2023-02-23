@@ -1,0 +1,30 @@
+<%- include('./include/navbar') -%>
+    <div class="row">
+        <div class="col-md-8">
+
+            <body>
+                <h1>GitHub Repository Crawler</h1>
+                <form>
+                    <label for="url_git">GitHub URL:</label>
+                    <input type="text" id="url_git" name="url_git"><br><br>
+                    <button type="submit" onclick="submitForm()">Crawler</button>
+                </form>
+                <script>
+                    function submitForm() {
+                        event.preventDefault();
+                        const url_git = document.getElementById('url_git').value;
+                        const xhr = new XMLHttpRequest();
+                        xhr.open('POST', '/save-url');
+                        xhr.setRequestHeader('Content-Type', 'application/json');
+                        xhr.onreadystatechange = function () {
+                            if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
+                                alert('URL saved successfully');
+                            }
+                        }
+                        xhr.send(JSON.stringify({ url_git: url_git }));
+                    }
+                </script>
+
+            </body>
+        </div>
+    </div>
