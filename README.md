@@ -5,7 +5,7 @@ Tool to collect (crawler) data from public projects on github
 
 ## Installation
 
-Use the package manager [npm](https://pip.pypa.io/en/stable/) to install.
+Use the package manager [npm](https://www.npmjs.com/) to install.
 
 ```bash
 git clone https://github.com/hoanlv214/web-crawler-nodejs-mongodb.git
