@@ -21,8 +21,13 @@ visit: (http://localhost:3000)
 ```
 ## Feature
 - Get package.json from public repositories github by URL
+```
+node app.js
+```
 - Get all static file from any URL
-
+```
+npm start
+```
 ## Contributing
 
 Pull requests are welcome. For major changes, please open an issue first
