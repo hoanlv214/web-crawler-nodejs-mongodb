@@ -11,7 +11,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 app.get('/', (req, res) => {
-    res.send(`
+  res.send(`
     <html>
       <head>
         <title>GitHub Crawler</title>
@@ -44,20 +44,20 @@ app.get('/', (req, res) => {
 });
 
 app.post('/save-url', async (req, res) => {
-    const { url } = req.body;
-    try {
-        const packageJson = await getRepoPackageJson(url);
-        await client.connect();
-        const db = client.db('mydb');
-        const collection = db.collection('packages');
-        await collection.insertOne(packageJson);
-        res.sendStatus(200);
-    } catch (err) {
-        console.error(err);
-        res.sendStatus(500);
-    } finally {
-        await client.close();
-    }
+  const { url } = req.body;
+  try {
+    const packageJson = await getRepoPackageJson(url);
+    await client.connect();
+    const db = client.db('mydb');
+    const collection = db.collection('packages');
+    await collection.insertOne(packageJson);
+    res.sendStatus(200);
+  } catch (err) {
+    console.error(err);
+    res.sendStatus(500);
+  } finally {
+    await client.close();
+  }
 });
 
 app.listen(3001, () => console.log('Server listening on port 3001'));
