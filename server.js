@@ -1,7 +1,6 @@
-var express = require('express');
-var app = express();
-var http = require('http').createServer(app);
-
+const express = require('express');
+const app = express();
+const http = require('http').createServer(app);
 // set the view engine to ejs
 app.set('view engine', 'ejs');
 app.use('/public', express.static(__dirname + '/public'));
@@ -27,6 +26,7 @@ var ObjectID = mongodb.ObjectID;
 var htmlspecialchars = require('htmlspecialchars');
 
 var HTMLParser = require('node-html-parser');
+const { data } = require('cheerio/lib/api/attributes');
 var database = null;
 
 function getTagContent(querySelector, content, pageUrl) {
@@ -62,12 +62,6 @@ function crawlPage(url, callBack = null) {
     requestModule(url, async function (error, response, html) {
         if (!error && response.statusCode == 200) {
             var $ = cheerio.load(html);
-            // Get text 
-            // console.log('------- with request module -------')
-            // console.log($.text());
-            // Get HTML 
-            // console.log($.html());
-
             var page = await database.collection('pages').findOne({
                 'url': url
             });
@@ -98,7 +92,7 @@ function crawlPage(url, callBack = null) {
                             continue;
                         }
 
-                        var first4Words = href.substr(0, 4);
+                        var first4Words = href.substring(0, 4);
 
                         if (href.search(url) == -1 && first4Words != 'http') {
                             if (href[0] == '/') {
@@ -173,6 +167,29 @@ function crawlPage(url, callBack = null) {
     });
 }
 
+// function crawlPackage(git_url) {
+//     io.emit('crawl_update', 'Crawling packge: ' + git_url);
+//     requestModule(git_url, async function (error, response) {
+//         if (!error && response.statusCode == 200) {
+//             var package = await database.collection('packages').findOne({
+//                 'url': url
+//             });
+//             if (package == null) {
+//                 var object = getRepo(git_url);
+//                 try {
+//                     await database.collection('packages').insertOne(object);
+//                 } catch (e) {
+//                     console.log(e);
+//                 }
+//                 io.emit('package_crawled', object);
+//                 io.emit('crawl_update', 'Package crawled.');
+//             } else {
+//                 io.emit('crawl_update', 'Package already crawled.');
+//             }
+//         }
+//     });
+// }
+
 var months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 
 var mainURL = 'http://localhost:3000';
@@ -188,7 +205,7 @@ http.listen(3000, function () {
         }
         database = client.db('web_crawler');
         console.log('Database connected');
-
+        // reindex();
         app.post('/reindex', async function (request, result) {
             var url = request.fields.url;
 
@@ -202,7 +219,7 @@ http.listen(3000, function () {
                 result.redirect(backURL);
             });
         });
-
+        // delete page
         app.post('/delete-page', async function (request, result) {
             var url = request.fields.url;
 
@@ -214,7 +231,7 @@ http.listen(3000, function () {
             var backURL = request.header('Referer') || '/';
             result.redirect(backURL);
         });
-
+        // Display page details
         app.get('/page/:url', async function (request, result) {
             var url = request.params.url;
 
@@ -228,23 +245,22 @@ http.listen(3000, function () {
                 return false;
             }
 
-            result.render('page', {
+            result.render('page-detail', {
                 'page': page
             });
         });
-
+        // URL to crawl page tags
         app.post('/crawl-page', async function (request, result) {
             var url = request.fields.url;
             crawlPage(url);
-
             result.json({
                 'status': 'success',
                 'message': 'Page has been crawled',
                 'url': url
             });
         });
-
-        app.get('/', async function (request, result) {
+        // URL to crawl page tags
+        app.get('/pages', async function (request, result) {
 
             var pages = await database.collection('pages').find({})
                 .sort({
@@ -258,9 +274,148 @@ http.listen(3000, function () {
                 pages[index].time = time;
             }
 
-            result.render('index', {
+            result.render('index-page', {
                 'pages': pages
             });
+        });
+        // reindex package
+        app.post('/reindex', async function (request, result) {
+            var git_url = request.fields.git_url;
+
+            await database.collection('packages').deleteOne({
+                'git_url': git_url
+            });
+            io.emit('page_deleted', git_url);
+
+            crawlPage(git_url, function () {
+                var backURL = request.header('Referer') || '/';
+                result.redirect(backURL);
+            });
+        });
+        // delete package
+        app.post('/delete-package', async function (request, result) {
+            var git_url = request.fields.git_url;
+
+            await database.collection('packages').deleteOne({
+                'git_url': git_url
+            });
+            io.emit('packages_deleted', git_url);
+
+            var backURL = request.header('Referer') || '/';
+            result.redirect(backURL);
+        });
+        // URL to crawl package.json
+        app.post('/crawl-package', async function (request, result) {
+            var git_url = request.fields.git_url;
+            var crawlPackage = require('get-repo-package-json');
+            crawlPackage(git_url).then(async packageJson => {
+                const collection = database.collection('packages');
+                collection.insertOne(packageJson, function (err, result) {
+                    console.log("Package JSON file saved to MongoDB");
+                    console.log(packageJson);
+                });
+                var dependencies = {};
+                if (packageJson.dependencies != null) {
+                    return dependencies = JSON.parse(JSON.stringify(packageJson.dependencies));
+                }
+                else {
+                    dependencies = {};
+                }
+                var devDependencies = {};
+                if (packageJson.devDependencies != null) {
+                    return devDependencies = JSON.parse(JSON.stringify(packageJson.devDependencies));
+                } else {
+                    devDependencies = {};
+                }
+                var object = {
+                    'git_url': git_url,
+                    'name': packageJson.name,
+                    'description': packageJson.description,
+                    'version': packageJson.version,
+                    'author': packageJson.author,
+                    'license': packageJson.license,
+                    'homepage': packageJson.homepage,
+                    'repository': packageJson.repository,
+                    'keywords': packageJson.keywords,
+                    'dependencies': dependencies,
+                    'devDependencies': devDependencies,
+                    'time': new Date().getTime()
+                }
+                console.log("xau is" + object);
+                try {
+                    await database.collection('packages').insertOne(object);
+                } catch (e) {
+                    console.log(e);
+                }
+                result.json({
+                    'status': 'success',
+                    'message': 'Package has been crawled',
+                    'git_url': git_url
+                });
+            });
+        });
+        // URL to crawl package.json
+        app.get('/packagejson', async function (request, result) {
+            // var packages = await database.collection('packages').findOne({})
+            var packages = await database.collection('packages').find({})
+                .sort({
+                    'time': -1
+                }).toArray();
+            for (var index in packages) {
+                var date = new Date(packages[index].time);
+                var time = date.getDate() + ' ' + months[date.getMonth() + 1] + ', ' + date.getFullYear() + ' - ' + date.getHours() + ':' + date.getMinutes() + ':' + date.getSeconds();
+
+                packages[index].time = time;
+            }
+
+            result.render('index-git', {
+                'packages': packages
+            })
+        });
+        // Display details of a package
+        app.get('/packages/:git_url', async function (request, result) {
+            var git_url = request.params.git_url;
+
+            var packages = await database.collection('packages').findOne({
+                'git_url': git_url
+            });
+            if (packages == null) {
+                result.render('404', {
+                    'message': 'This packages has not been crawled'
+                });
+                return false;
+            }
+
+            result.render('package-detail', {
+                'packages': packages
+            });
+        });
+        // app.post('/getPackageData', async (req, res) => {
+        //     const { url: repoUrl } = req.body;
+
+        //     try {
+        //         const pkg = await getPackage(repoUrl);
+        //         const { name, version, description } = pkg;
+
+        //         const packageData = { name, version, description, repoUrl };
+
+        //         const client = await MongoClient.connect(url);
+        //         const db = client.db('web_crawler');
+
+        //         const collection = db.collection('packages');
+        //         await collection.insertOne(packageData);
+
+        //         client.close();
+
+        //         res.render('packageData', { packageData: [packageData] });
+        //     } catch (error) {
+        //         console.error(`Error retrieving package data from ${repoUrl}:`, error);
+        //         res.status(500).send('Error retrieving package data');
+        //     }
+        // });
+        // home page
+        app.get('/', function (request, result) {
+            result.render('index');
         });
     });
 

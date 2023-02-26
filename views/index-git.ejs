@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Repository Crawler</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+</head>
+
+<body>
+    <%- include('./include/navbar') -%>
+        <div class="height-50 bg-light">
+            <!-- <div class="container">
+                <h1 style="text-align: center;">GitHub Repository Crawler</h1>
+                <form action="/crawler" method="post" style="text-align: center">
+                    <div>
+                        <input type="text" name="repo_url" value="repo_url" placeholder="Enter GitHub repository URL">
+                    </div>
+
+                    <button type="submit"
+                        style="background-color: rgb(40, 229, 40); color: #F7F6FB; margin: auto">Crawl</button>
+                </form>
+            </div> -->
+            <div class="row">
+                <div class="col-md-8">
+                    <H1 style="text-align: center;">Github Repository Crawler</H1>
+                    <form method="POST" onsubmit=" return crawlPackage(this);">
+                        <div class="form-group">
+                            <label>Enter URL</label>
+                            <input type="git_url" name="git_url" class="form-control" required />
+                        </div>
+
+                        <input type="submit" name="submit" value="Crawl" class="btn btn-info" />
+                    </form>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-8">
+                    <H1 style="text-align: center;">List Packages Crawled</H1>
+                    <table class="table table-bordered" id="table">
+                        <thead>
+                            <tr>
+                                <th>URL</th>
+                                <th>Name</th>
+                                <th>Time</th>
+                            </tr>
+                        </thead>
+
+                        <tbody id="data">
+                            <% for (var index in packages) { %>
+                                <tr>
+                                    <td>
+                                        <a href="/packages/<%= encodeURIComponent(packages[index].git_url) %>">
+                                            <%= packages[index].git_url %>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <%= packages[index].name %>
+                                    </td>
+                                    <td>
+                                        <%= packages[index].time %>
+                                    </td>
+                                </tr>
+                                <% } %>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <ul class="list-group" id="my-updates"></ul>
+            </div>
+        </div>
+</body>
+<script>
+    document.addEventListener("DOMContentLoaded", function (event) {
+
+        const showNavbar = (toggleId, navId, bodyId, headerId) => {
+            const toggle = document.getElementById(toggleId),
+                nav = document.getElementById(navId),
+                bodypd = document.getElementById(bodyId),
+                headerpd = document.getElementById(headerId)
+
+            // Validate that all variables exist
+            if (toggle && nav && bodypd && headerpd) {
+                toggle.addEventListener('click', () => {
+                    // show navbar
+                    nav.classList.toggle('show')
+                    // change icon
+                    toggle.classList.toggle('bx-x')
+                    // add padding to body
+                    bodypd.classList.toggle('body-pd')
+                    // add padding to header
+                    headerpd.classList.toggle('body-pd')
+                })
+            }
+        }
+
+        showNavbar('header-toggle', 'nav-bar', 'body-pd', 'header')
+
+        /*===== LINK ACTIVE =====*/
+        const linkColor = document.querySelectorAll('.nav_link')
+
+        function colorLink() {
+            if (linkColor) {
+                linkColor.forEach(l => l.classList.remove('active'))
+                this.classList.add('active')
+            }
+        }
+        linkColor.forEach(l => l.addEventListener('click', colorLink))
+
+        // Your code to run since DOM is loaded and ready
+    });
+</script>
+<script src="/public/jquery-3.3.1.min.js"></script>
+<script src="/public/bootstrap.js"></script>
+<script src="/public/socket.io.js"></script>
+<script src="/public/jquery.dataTables.min.js"></script>
+<script>
+    var table = null;
+    // var socketIO = io("http://localhost:3000/");
+
+    var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+
+    window.addEventListener("load", function () {
+        table = $('#table').DataTable({
+            "order": [[2, "asc"]]
+        });
+    });
+
+    function crawlPackage(form) {
+        var ajax = new XMLHttpRequest();
+        ajax.open("POST", "/crawl-package", true);
+
+        ajax.onreadystatechange = function () {
+            if (this.readyState == 4) {
+                if (this.status == 200) {
+                    console.log(this.responseText);
+                    var data = JSON.parse(this.responseText);
+                    console.log(data);
+                }
+            }
+        };
+
+        var formData = new FormData(form);
+        ajax.send(formData);
+        return false;
+    }
+</script>
+<%- include('./include/footer') -%>
+
+</html>
