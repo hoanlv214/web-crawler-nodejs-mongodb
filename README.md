@@ -25,12 +25,16 @@ npm install
 ```
 
 ## Feature
-```
+```bash
 npm start
-visit: [localhost](http://localhost:3000/)
 ```
-- Get package.json from public repositories github by URL 
-- Get all static file from any URL
+Visit: [http://localhost:3000](http://localhost:3000/)
+- Packages crawler
+    - Get package.json from public repositories github by URL [http://localhost:3000/packagejson](http://localhost:3000/packagejson)
+    - View detail packages has been crawled
+- Static file: images, js, video,...
+    - Get all static file from any URL [http://localhost:3000/pages](http://localhost:3000/pages/)
+    - View detail page has been crawled
 
 ## Contributing
 
