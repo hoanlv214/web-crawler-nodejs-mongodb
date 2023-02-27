@@ -9,7 +9,9 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 var io = require('socket.io')(http, {
     'cors': {
-        'origin': '*'
+        'origin': '*',
+        methods: ["GET", "POST"],
+        credentials: true
     }
 });
 
@@ -167,28 +169,6 @@ function crawlPage(url, callBack = null) {
     });
 }
 
-// function crawlPackage(git_url) {
-//     io.emit('crawl_update', 'Crawling packge: ' + git_url);
-//     requestModule(git_url, async function (error, response) {
-//         if (!error && response.statusCode == 200) {
-//             var package = await database.collection('packages').findOne({
-//                 'url': url
-//             });
-//             if (package == null) {
-//                 var object = getRepo(git_url);
-//                 try {
-//                     await database.collection('packages').insertOne(object);
-//                 } catch (e) {
-//                     console.log(e);
-//                 }
-//                 io.emit('package_crawled', object);
-//                 io.emit('crawl_update', 'Package crawled.');
-//             } else {
-//                 io.emit('crawl_update', 'Package already crawled.');
-//             }
-//         }
-//     });
-// }
 
 var months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 
@@ -269,7 +249,7 @@ http.listen(3000, function () {
 
             for (var index in pages) {
                 var date = new Date(pages[index].time);
-                var time = date.getDate() + ' ' + months[date.getMonth() + 1] + ', ' + date.getFullYear() + ' - ' + date.getHours() + ':' + date.getMinutes() + ':' + date.getSeconds();
+                var time = date.getDate() + ' ' + months[date.getMonth()] + ', ' + date.getFullYear() + ' - ' + date.getHours() + ':' + date.getMinutes() + ':' + date.getSeconds();
 
                 pages[index].time = time;
             }
@@ -285,7 +265,7 @@ http.listen(3000, function () {
             await database.collection('packages').deleteOne({
                 'git_url': git_url
             });
-            io.emit('page_deleted', git_url);
+            io.emit('package_deleted', git_url);
 
             crawlPage(git_url, function () {
                 var backURL = request.header('Referer') || '/';
@@ -299,7 +279,7 @@ http.listen(3000, function () {
             await database.collection('packages').deleteOne({
                 'git_url': git_url
             });
-            io.emit('packages_deleted', git_url);
+            io.emit('package_deleted', git_url);
 
             var backURL = request.header('Referer') || '/';
             result.redirect(backURL);
@@ -314,19 +294,19 @@ http.listen(3000, function () {
                     console.log("Package JSON file saved to MongoDB");
                     console.log(packageJson);
                 });
-                var dependencies = {};
-                if (packageJson.dependencies != null) {
-                    return dependencies = JSON.parse(JSON.stringify(packageJson.dependencies));
-                }
-                else {
-                    dependencies = {};
-                }
-                var devDependencies = {};
-                if (packageJson.devDependencies != null) {
-                    return devDependencies = JSON.parse(JSON.stringify(packageJson.devDependencies));
-                } else {
-                    devDependencies = {};
-                }
+                // var dependencies = {};
+                // if (packageJson.dependencies != null) {
+                //     return dependencies = JSON.parse(JSON.stringify(packageJson.dependencies));
+                // }
+                // else {
+                //     dependencies = {};
+                // }
+                // var devDependencies = {};
+                // if (packageJson.devDependencies != null) {
+                //     return devDependencies = JSON.parse(JSON.stringify(packageJson.devDependencies));
+                // } else {
+                //     devDependencies = {};
+                // }
                 var object = {
                     'git_url': git_url,
                     'name': packageJson.name,
@@ -337,11 +317,10 @@ http.listen(3000, function () {
                     'homepage': packageJson.homepage,
                     'repository': packageJson.repository,
                     'keywords': packageJson.keywords,
-                    'dependencies': dependencies,
-                    'devDependencies': devDependencies,
+                    'dependencies': packageJson.dependencies,
+                    'devDependencies': packageJson.devDependencies,
                     'time': new Date().getTime()
                 }
-                console.log("xau is" + object);
                 try {
                     await database.collection('packages').insertOne(object);
                 } catch (e) {
@@ -363,7 +342,7 @@ http.listen(3000, function () {
                 }).toArray();
             for (var index in packages) {
                 var date = new Date(packages[index].time);
-                var time = date.getDate() + ' ' + months[date.getMonth() + 1] + ', ' + date.getFullYear() + ' - ' + date.getHours() + ':' + date.getMinutes() + ':' + date.getSeconds();
+                var time = date.getDate() + ' ' + months[date.getMonth()] + ', ' + date.getFullYear() + ' - ' + date.getHours() + ':' + date.getMinutes() + ':' + date.getSeconds();
 
                 packages[index].time = time;
             }
@@ -386,33 +365,10 @@ http.listen(3000, function () {
                 return false;
             }
 
-            result.render('package-detail', {
+            result.render('a', {
                 'packages': packages
             });
         });
-        // app.post('/getPackageData', async (req, res) => {
-        //     const { url: repoUrl } = req.body;
-
-        //     try {
-        //         const pkg = await getPackage(repoUrl);
-        //         const { name, version, description } = pkg;
-
-        //         const packageData = { name, version, description, repoUrl };
-
-        //         const client = await MongoClient.connect(url);
-        //         const db = client.db('web_crawler');
-
-        //         const collection = db.collection('packages');
-        //         await collection.insertOne(packageData);
-
-        //         client.close();
-
-        //         res.render('packageData', { packageData: [packageData] });
-        //     } catch (error) {
-        //         console.error(`Error retrieving package data from ${repoUrl}:`, error);
-        //         res.status(500).send('Error retrieving package data');
-        //     }
-        // });
         // home page
         app.get('/', function (request, result) {
             result.render('index');

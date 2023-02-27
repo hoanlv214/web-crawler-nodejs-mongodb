@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="/public/bootstrap.css" />
+<link rel="stylesheet" href="/public/font-awesome-4.7.0/css/font-awesome.css" />
+<link rel="stylesheet" href="/public/jquery.dataTables.min.css" />
+
+<head>
+    <title>
+        <%=packages.name%>
+    </title>
+
+</head>
+
+<body>
+    <%- include('./include/navbar') -%>
+        <div class="container" style="margin-top: 50px;">
+
+            <div class="jumbotron">
+                <h1>
+                    <%= packages.name %>
+                </h1>
+
+                <div class="row">
+                    <div class="col-md-1">
+                        <form method="POST" action="/delete-page"
+                            onsubmit="return confirm('Are you sure you want to delete this page ?');">
+                            <input type="hidden" name="git_url" value="<%= packages.git_url %>" required />
+                            <input type="submit" class="btn btn-danger" value="Delete" />
+                        </form>
+                    </div>
+
+                    <div class="col-md-1">
+                        <form method="POST" action="/reindex"
+                            onsubmit="return confirm('Are you sure you want to re-index this page ?');">
+                            <input type="hidden" name="git_url" value="<%= packages.git_url %>" required />
+                            <input type="submit" class="btn btn-primary" value="Re-index" />
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <h1 style="text-align: center;">Dependencies</h1>
+            <table class="table table-bordered my-table">
+                <thead>
+                    <tr>
+                        <th>Package Name</th>
+                        <th>Version</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <% for (const [packageName, version] of Object.entries(packages.dependencies)) { %>
+                        <tr>
+                            <td>
+                                <%=packageName%>
+                            </td>
+                            <td>
+                                <%=version%>
+                            </td>
+                        </tr>
+                        <% } %>
+                </tbody>
+            </table>
+        </div>
+
+</body>
+<style>
+    .row {
+        margin-top: 50px;
+    }
+
+    .table-bordered th,
+    .table-bordered td,
+    .dataTables_wrapper .dataTables_filter input {
+        border: 1px solid black !important;
+    }
+
+    .table thead th {
+        border-bottom: 2px solid black !important;
+    }
+
+    .table thead {
+        background-color: #4723D9;
+        text-align: center;
+        color: #F7F6FB;
+    }
+</style>
+
+<script src="/public/jquery-3.3.1.min.js"></script>
+<script src="/public/bootstrap.js"></script>
+<script src="/public/jquery.dataTables.min.js"></script>
+
+
+</html>

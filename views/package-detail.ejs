@@ -14,92 +14,86 @@
 
 <body>
     <%- include('./include/navbar') -%>
-        <div class="row">
-            <div class="col-md-1">
-                <form method="POST" action="/delete-package"
-                    onsubmit="return confirm('Are you sure you want to delete this package ?');">
-                    <input type="hidden" name="git_url" value="<%= packages.git_url %>" required />
-                    <input type="submit" class="btn btn-danger" value="Delete" />
-                </form>
-            </div>
+        <div class="jumbotron">
+            <h1>
+                <%= packages.name %>
+            </h1>
+            <div class="row">
+                <div class="col-md-1">
+                    <form method="POST" action="/delete-package"
+                        onsubmit="return confirm('Are you sure you want to delete this package ?');">
+                        <input type="hidden" name="git_url" value="<%= packages.git_url %>" required />
+                        <input type="submit" class="btn btn-danger" value="Delete" />
+                    </form>
+                </div>
 
-            <div class="col-md-1">
-                <form method="POST" action="/reindex"
-                    onsubmit="return confirm('Are you sure you want to re-index this package ?');">
-                    <input type="hidden" name="git_url" value="<%= packages.git_url %>" required />
-                    <input type="submit" class="btn btn-primary" value="Re-index" />
-                </form>
+                <div class="col-md-1">
+                    <form method="POST" action="/reindex"
+                        onsubmit="return confirm('Are you sure you want to re-index this package ?');">
+                        <input type="hidden" name="git_url" value="<%= packages.git_url %>" required />
+                        <input type="submit" class="btn btn-primary" value="Re-index" />
+                    </form>
+                </div>
             </div>
         </div>
         <div class="height-50 bg-light">
-            <!-- <div class="container">
-                <h1 style="text-align: center;">GitHub Repository Crawler</h1>
-                <form action="/crawler" method="post" style="text-align: center">
-                    <div>
-                        <input type="text" name="repo_url" value="repo_url" placeholder="Enter GitHub repository URL">
-                    </div>
-
-                    <button type="submit"
-                        style="background-color: rgb(40, 229, 40); color: #F7F6FB; margin: auto">Crawl</button>
-                </form>
-            </div> -->
             <h2>Package.json Information</h2>
-            <% for (var index in packages) { %>
-                <div class="name">
-                    <%= packages[index].author.name %>
-                </div>
-                <div class="desc">
-                    <%= packages[index].description %>
-                </div>
-                <% } %>
-                    <br>
-                    <!-- display dependencies -->
-                    <h3>Dependencies</h3>
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Package Name</th>
-                                <th>Version</th>
-                            </tr>
-                        </thead>
-                        <tbody id="data">
-                            <% for (var packages[index].dependencies) { %>
-                                <tr>
-                                    <td>
-                                        <a href="/packages/<%= encodeURIComponent(packages[index].git_url) %>"></a>
-                                    </td>
-                                    <td>
-                                        <%= packages[index].name %>
-                                    </td>
-                                    <td>
-                                        <%= packages[index].version %>
-                                    </td>
-                                </tr>
-                                <% } %>
-                        </tbody>
-                    </table>
-                    <!-- display devdependencies -->
-                    <h3>Dev Dependencies</h3>
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Package Name</th>
-                                <th>Version</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <% for (var packages[index].dependencies) { %>
-                                <tr>
-                                    <td>
-                                        <%= packages[index].name %>
-                                    </td>
-                                    <td>
-                                        <%= packages[index].version %>
-                                    </td>
-                                </tr>
-                                <% } %>
-                        </tbody>
-                    </table>
+
+            <div class="name">
+                <%= packages[index].author.name %>
+            </div>
+            <div class="desc">
+                <%= packages[index].description %>
+            </div>
+
+            <br>
+            <!-- display dependencies -->
+            <h3>Dependencies</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Package Name</th>
+                        <th>Version</th>
+                    </tr>
+                </thead>
+                <tbody id="data">
+                    <% for (const [packageName, version] of Object.entries(packages.dependencies)) { %>
+                        <tr>
+                            <td>
+                                <a href="/packages/<%= encodeURIComponent(packages[index].git_url) %>"></a>
+                            </td>
+                            <td>
+                                <%= packageName %>
+                            </td>
+                            <td>
+                                <%= version %>
+                            </td>
+                        </tr>
+                        <% } %>
+                </tbody>
+            </table>
+            <!-- display devdependencies -->
+            <h3>Dev Dependencies</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Package Name</th>
+                        <th>Version</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <% for (var packages[index].devDependencies) { %>
+                        <tr>
+                            <td>
+                                <%= packages[index].devDependencies.name %>
+                            </td>
+                            <td>
+                                <%= packages[index].dependencies.version %>
+                            </td>
+                        </tr>
+                        <% } %>
+                </tbody>
+            </table>
         </div>
 </body>
 <style>

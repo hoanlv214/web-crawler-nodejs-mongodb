@@ -10,29 +10,21 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+    <link rel="stylesheet" href="/public/bootstrap.css" />
+    <link rel="stylesheet" href="/public/font-awesome-4.7.0/css/font-awesome.css" />
+    <link rel="stylesheet" href="/public/jquery.dataTables.min.css" />
 </head>
 
 <body>
     <%- include('./include/navbar') -%>
         <div class="height-50 bg-light">
-            <!-- <div class="container">
-                <h1 style="text-align: center;">GitHub Repository Crawler</h1>
-                <form action="/crawler" method="post" style="text-align: center">
-                    <div>
-                        <input type="text" name="repo_url" value="repo_url" placeholder="Enter GitHub repository URL">
-                    </div>
-
-                    <button type="submit"
-                        style="background-color: rgb(40, 229, 40); color: #F7F6FB; margin: auto">Crawl</button>
-                </form>
-            </div> -->
             <div class="row">
                 <div class="col-md-8">
                     <H1 style="text-align: center;">Github Repository Crawler</H1>
                     <form method="POST" onsubmit=" return crawlPackage(this);">
                         <div class="form-group">
                             <label>Enter URL</label>
-                            <input type="git_url" name="git_url" class="form-control" required />
+                            <input type="url" name="git_url" class="form-control" required />
                         </div>
 
                         <input type="submit" name="submit" value="Crawl" class="btn btn-info" />
@@ -76,50 +68,11 @@
             </div>
         </div>
 </body>
-<script>
-    document.addEventListener("DOMContentLoaded", function (event) {
 
-        const showNavbar = (toggleId, navId, bodyId, headerId) => {
-            const toggle = document.getElementById(toggleId),
-                nav = document.getElementById(navId),
-                bodypd = document.getElementById(bodyId),
-                headerpd = document.getElementById(headerId)
-
-            // Validate that all variables exist
-            if (toggle && nav && bodypd && headerpd) {
-                toggle.addEventListener('click', () => {
-                    // show navbar
-                    nav.classList.toggle('show')
-                    // change icon
-                    toggle.classList.toggle('bx-x')
-                    // add padding to body
-                    bodypd.classList.toggle('body-pd')
-                    // add padding to header
-                    headerpd.classList.toggle('body-pd')
-                })
-            }
-        }
-
-        showNavbar('header-toggle', 'nav-bar', 'body-pd', 'header')
-
-        /*===== LINK ACTIVE =====*/
-        const linkColor = document.querySelectorAll('.nav_link')
-
-        function colorLink() {
-            if (linkColor) {
-                linkColor.forEach(l => l.classList.remove('active'))
-                this.classList.add('active')
-            }
-        }
-        linkColor.forEach(l => l.addEventListener('click', colorLink))
-
-        // Your code to run since DOM is loaded and ready
-    });
-</script>
-<script src="/public/jquery-3.3.1.min.js"></script>
-<script src="/public/bootstrap.js"></script>
-<script src="/public/socket.io.js"></script>
-<script src="/public/jquery.dataTables.min.js"></script>
+<script src="../public/jquery-3.3.1.min.js"></script>
+<script src="../public/bootstrap.js"></script>
+<!-- <script src="../public/socket.io.js"></script> -->
+<script src="../public/jquery.dataTables.min.js"></script>
 <script>
     var table = null;
     // var socketIO = io("http://localhost:3000/");
@@ -131,6 +84,38 @@
             "order": [[2, "asc"]]
         });
     });
+
+    // socketIO.on("package_deleted", function (git_url) {
+    //     table
+    //         .rows(function (idx, data, node) {
+    //             return data[0].includes(git_url);
+    //         })
+    //         .remove()
+    //         .draw();
+    // });
+
+    // socketIO.on("crawl_update", function (data) {
+    //     console.log(data);
+
+    //     var html = "";
+    //     html += `<li class="list-group-item">` + data + `</li>`;
+    //     document.getElementById("my-updates").innerHTML = html + document.getElementById("my-updates").innerHTML;
+
+    //     document.getElementById('my-updates').scrollTop = 0;
+    // });
+
+    // socketIO.on("package_crawled", function (data) {
+    //     // console.log(data);
+
+    //     var date = new Date(data.time);
+    //     var time = date.getDate() + " " + months[date.getMonth()] + ", " + date.getFullYear() + " - " + date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds();
+
+    //     table.row.add([
+    //         "<a href='/page/" + encodeURIComponent(data.git_url) + "'>" + data.git_url + "</a>",
+    //         data.title,
+    //         time
+    //     ]).draw(false);
+    // });
 
     function crawlPackage(form) {
         var ajax = new XMLHttpRequest();
@@ -151,6 +136,29 @@
         return false;
     }
 </script>
+<style>
+    #my-updates {
+        max-height: 300px;
+        overflow-y: scroll;
+        width: fit-content;
+    }
+
+    .table-bordered th,
+    .table-bordered td,
+    .dataTables_wrapper .dataTables_filter input {
+        border: 1px solid black !important;
+    }
+
+    .table thead th {
+        border-bottom: 2px solid black !important;
+    }
+
+    .table thead {
+        background: #4723D9;
+        text-align: center;
+        color: #F7F6FB;
+    }
+</style>
 <%- include('./include/footer') -%>
 
 </html>
