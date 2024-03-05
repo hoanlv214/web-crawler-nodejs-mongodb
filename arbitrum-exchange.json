@@ -1,1 +1,1406 @@
-{"data":{"pairs":[{"id":"0x692a0b300366d1042679397e40f3d2cb4b8f7d30","volumeUSD":"23952320.97408757774992671035852372","token0":{"id":"0x82af49447d8a07e3bd95bd0d56f35241523fbab1","decimals":"18","name":"Wrapped Ether"},"token1":{"id":"0xda10009cbd5d07dd0cecc66161fc93d7c9000da1","decimals":"18","name":"Dai Stablecoin"}}]}}
+{
+  "data": {
+    "pairs": [
+      {
+        "id": "0xb7e50106a5bd3cf21af210a755f9c8740890a8c9",
+        "volumeUSD": "2771802247.545541517825585732302873",
+        "token0": {
+          "id": "0x539bde0d7dbd336b79148aa742883198bbf60342",
+          "decimals": "18",
+          "name": "MAGIC"
+        },
+        "token1": {
+          "id": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+          "decimals": "18",
+          "name": "Wrapped Ether"
+        }
+      },
+      {
+        "id": "0x905dfcd5649217c42684f23958568e533c711aa3",
+        "volumeUSD": "4066175568.082478070776933265571278",
+        "token0": {
+          "id": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+          "decimals": "18",
+          "name": "Wrapped Ether"
+        },
+        "token1": {
+          "id": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+          "decimals": "6",
+          "name": "USD Coin (Arb1)"
+        }
+      },
+      {
+        "id": "0x0a4f9962e24893a4a7567e52c1ce37d5482365de",
+        "volumeUSD": "6509358.374433007554181778249013718",
+        "token0": {
+          "id": "0x73db621cc8f0a767bed0e5c0a2920f480d77b765",
+          "decimals": "18",
+          "name": "GTA"
+        },
+        "token1": {
+          "id": "0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9",
+          "decimals": "6",
+          "name": "Tether USD"
+        }
+      },
+      {
+        "id": "0x3711b82c441f2eb89cd14910ad41214c7832bf1f",
+        "volumeUSD": "876119.2233565884745513743655686893",
+        "token0": {
+          "id": "0x7fb7ede54259cb3d4e1eaf230c7e2b1ffc951e9a",
+          "decimals": "18",
+          "name": "NUMA"
+        },
+        "token1": {
+          "id": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+          "decimals": "18",
+          "name": "Wrapped Ether"
+        }
+      },
+      {
+        "id": "0x0c1cf6883efa1b496b01f654e247b9b419873054",
+        "volumeUSD": "1294225081.607879603417870807156233",
+        "token0": {
+          "id": "0x6c2c06790b3e3e3c38e12ee22f8183b37a13ee55",
+          "decimals": "18",
+          "name": "Dopex Governance Token"
+        },
+        "token1": {
+          "id": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+          "decimals": "18",
+          "name": "Wrapped Ether"
+        }
+      },
+      {
+        "id": "0x25faa972bc761044e8cb0e88a8110a6984dcd6e1",
+        "volumeUSD": "3528269.066789932226811281238459312",
+        "token0": {
+          "id": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+          "decimals": "18",
+          "name": "Wrapped Ether"
+        },
+        "token1": {
+          "id": "0xee9857de0e55d4a54d36a5a5a73a15e57435fdca",
+          "decimals": "18",
+          "name": "AsgardX"
+        }
+      },
+      {
+        "id": "0xc73d2191a1dd0a99b377272899a5569ed83f8cd8",
+        "volumeUSD": "8130004.241001481792715122820574737",
+        "token0": {
+          "id": "0x07e49d5de43dda6162fa28d24d5935c151875283",
+          "decimals": "18",
+          "name": "GOVI"
+        },
+        "token1": {
+          "id": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+          "decimals": "18",
+          "name": "Wrapped Ether"
+        }
+      },
+      {
+        "id": "0x8dc6efd57a13b7ba3ff7824c9708db24d3190703",
+        "volumeUSD": "3540523.655050582358700597430198471",
+        "token0": {
+          "id": "0x2e80259c9071b6176205ff5f5eb6f7ec8361b93f",
+          "decimals": "18",
+          "name": "HashDAO Token"
+        },
+        "token1": {
+          "id": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+          "decimals": "18",
+          "name": "Wrapped Ether"
+        }
+      },
+      {
+        "id": "0x8f93eaae544e8f5eb077a1e09c1554067d9e2ca8",
+        "volumeUSD": "557076992.608664795472831762703701",
+        "token0": {
+          "id": "0x3e6648c5a70a150a88bce65f4ad4d506fe15d2af",
+          "decimals": "18",
+          "name": "Spell Token"
+        },
+        "token1": {
+          "id": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+          "decimals": "18",
+          "name": "Wrapped Ether"
+        }
+      },
+      {
+        "id": "0x75fa3be54d5b3571ed19f3eeace61fa1566ef948",
+        "volumeUSD": "35440695.0684754156649448954632494",
+        "token0": {
+          "id": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+          "decimals": "18",
+          "name": "Wrapped Ether"
+        },
+        "token1": {
+          "id": "0x9e20461bc2c4c980f62f1b279d71734207a6a356",
+          "decimals": "18",
+          "name": "OmniCat"
+        }
+      },
+      {
+        "id": "0xb45a382e6c50c71376fc54f902eb6c4c57436b68",
+        "volumeUSD": "4568328.251703753500565923294482961",
+        "token0": {
+          "id": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+          "decimals": "18",
+          "name": "Wrapped Ether"
+        },
+        "token1": {
+          "id": "0xccd05a0fcfc1380e9da27862adb2198e58e0d66f",
+          "decimals": "18",
+          "name": "Anima"
+        }
+      },
+      {
+        "id": "0xcb0e5bfa72bbb4d16ab5aa0c60601c438f04b4ad",
+        "volumeUSD": "397731009.2369133487864955227014698",
+        "token0": {
+          "id": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+          "decimals": "18",
+          "name": "Wrapped Ether"
+        },
+        "token1": {
+          "id": "0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9",
+          "decimals": "6",
+          "name": "Tether USD"
+        }
+      },
+      {
+        "id": "0x515e252b2b5c22b4b2b6df66c2ebeea871aa4d69",
+        "volumeUSD": "96035436.75836976407946385069334442",
+        "token0": {
+          "id": "0x2f2a2543b76a4166549f7aab2e75bef0aefc5b0f",
+          "decimals": "8",
+          "name": "Wrapped BTC"
+        },
+        "token1": {
+          "id": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+          "decimals": "18",
+          "name": "Wrapped Ether"
+        }
+      },
+      {
+        "id": "0x79dc8abe4f1157edfacf9875ecd3e17ae7056268",
+        "volumeUSD": "10865604.76027178401470306073968211",
+        "token0": {
+          "id": "0x30dcba0405004cf124045793e1933c798af9e66a",
+          "decimals": "18",
+          "name": "Yieldification"
+        },
+        "token1": {
+          "id": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+          "decimals": "18",
+          "name": "Wrapped Ether"
+        }
+      },
+      {
+        "id": "0xe56c8cfaaa68469990c40844a89205c4fd7e25a4",
+        "volumeUSD": "2874903.46007730768567945490334094",
+        "token0": {
+          "id": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+          "decimals": "18",
+          "name": "Wrapped Ether"
+        },
+        "token1": {
+          "id": "0xcb24b141ecaaad0d2c255d6f99d6f4790546a75c",
+          "decimals": "18",
+          "name": "Exponential Capital"
+        }
+      },
+      {
+        "id": "0x10052e51797cc9a018d50d112547347e7951c198",
+        "volumeUSD": "1015200.468831368398374341872554034",
+        "token0": {
+          "id": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+          "decimals": "18",
+          "name": "Wrapped Ether"
+        },
+        "token1": {
+          "id": "0x9e724698051da34994f281bd81c3e7372d1960ae",
+          "decimals": "18",
+          "name": "Ascension Protocol"
+        }
+      },
+      {
+        "id": "0x11eecdbd8f2d670016d061e4c064072e6158ede2",
+        "volumeUSD": "24885437.11553674726551483226043479",
+        "token0": {
+          "id": "0x155f0dd04424939368972f4e1838687d6a831151",
+          "decimals": "18",
+          "name": "ArbiDoge"
+        },
+        "token1": {
+          "id": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+          "decimals": "18",
+          "name": "Wrapped Ether"
+        }
+      },
+      {
+        "id": "0x5b772b00cb6b95c4501e4be75ce7ddd6cb625320",
+        "volumeUSD": "1917874.228800891934128960082931794",
+        "token0": {
+          "id": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+          "decimals": "18",
+          "name": "Wrapped Ether"
+        },
+        "token1": {
+          "id": "0xa6219b4bf4b861a2b1c02da43b2af266186edc04",
+          "decimals": "9",
+          "name": "ArVault"
+        }
+      },
+      {
+        "id": "0xbfc41d69e3e828718b39ddc448b1050a82f84105",
+        "volumeUSD": "8247490.895757496594520114102461336",
+        "token0": {
+          "id": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+          "decimals": "18",
+          "name": "Wrapped Ether"
+        },
+        "token1": {
+          "id": "0xf7693c6fd9a7172d537fa75d133d309501cbd657",
+          "decimals": "18",
+          "name": "Web3 No Value"
+        }
+      },
+      {
+        "id": "0xc126340ddae642721219927dc78d976d83a17ae0",
+        "volumeUSD": "18694013.19485305447513948919436573",
+        "token0": {
+          "id": "0x27d8de4c30ffde34e982482ae504fc7f23061f61",
+          "decimals": "18",
+          "name": "MyMetaTrader Token"
+        },
+        "token1": {
+          "id": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+          "decimals": "18",
+          "name": "Wrapped Ether"
+        }
+      },
+      {
+        "id": "0xc0b4d8affe04ad24ce6c52672a885df669ef3f9a",
+        "volumeUSD": "12212995.70820457870608686617417286",
+        "token0": {
+          "id": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+          "decimals": "18",
+          "name": "Wrapped Ether"
+        },
+        "token1": {
+          "id": "0xaa54e84a3e6e5a80288d2c2f8e36ea5ca3a3ca30",
+          "decimals": "9",
+          "name": "SHARBI"
+        }
+      },
+      {
+        "id": "0x8f1939aadaea4fe5203d79051b8afde0951aeebe",
+        "volumeUSD": "1552648.986973939457639822474242886",
+        "token0": {
+          "id": "0x4e05d153305bc472e220ec3f7a7894b38f74741f",
+          "decimals": "18",
+          "name": "Smart Aliens"
+        },
+        "token1": {
+          "id": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+          "decimals": "18",
+          "name": "Wrapped Ether"
+        }
+      },
+      {
+        "id": "0x82441f1c9ba9412661115fedeaf1acc6f5d450ff",
+        "volumeUSD": "1642144.571625122314201903073001305",
+        "token0": {
+          "id": "0x98c435070c24e5152fc14d130937a38810c104b9",
+          "decimals": "18",
+          "name": "Kobe"
+        },
+        "token1": {
+          "id": "0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9",
+          "decimals": "6",
+          "name": "Tether USD"
+        }
+      },
+      {
+        "id": "0xbf6cbb1f40a542af50839cad01b0dc1747f11e18",
+        "volumeUSD": "65346221.35631677450098913421497975",
+        "token0": {
+          "id": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+          "decimals": "18",
+          "name": "Wrapped Ether"
+        },
+        "token1": {
+          "id": "0x912ce59144191c1204e64559fe8253a0e49e6548",
+          "decimals": "18",
+          "name": "Arbitrum"
+        }
+      },
+      {
+        "id": "0x3fec70f319a4145eba17765ae0c64b2232fe5bae",
+        "volumeUSD": "1745815.683867359568796731633849394",
+        "token0": {
+          "id": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+          "decimals": "18",
+          "name": "Wrapped Ether"
+        },
+        "token1": {
+          "id": "0x9f6abbf0ba6b5bfa27f4deb6597cc6ec20573fda",
+          "decimals": "18",
+          "name": "Ferrum Network Token"
+        }
+      },
+      {
+        "id": "0x9547f9da8142d24207e7054a57e569db8d682f76",
+        "volumeUSD": "3162302.983262133917142593079860368",
+        "token0": {
+          "id": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+          "decimals": "18",
+          "name": "Wrapped Ether"
+        },
+        "token1": {
+          "id": "0x88f3c911190a2b6459345872c363371f3dfa72b6",
+          "decimals": "18",
+          "name": "Hamburglar Token"
+        }
+      },
+      {
+        "id": "0x789367cdbe75d8799e0b36c83925278c16d3b921",
+        "volumeUSD": "216965.7974056844380285341284877472",
+        "token0": {
+          "id": "0x32e4d98d3010ac12d75019c484caa78665b03986",
+          "decimals": "18",
+          "name": "GBOT"
+        },
+        "token1": {
+          "id": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+          "decimals": "6",
+          "name": "USD Coin (Arb1)"
+        }
+      },
+      {
+        "id": "0x0c4de24bfbc86d1b6ef742f6022b84262a32d5c8",
+        "volumeUSD": "117035.4564484805507379621421783991",
+        "token0": {
+          "id": "0x55678cd083fcdc2947a0df635c93c838c89454a3",
+          "decimals": "18",
+          "name": "Tokenlon"
+        },
+        "token1": {
+          "id": "0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9",
+          "decimals": "6",
+          "name": "Tether USD"
+        }
+      },
+      {
+        "id": "0xb6dd51d5425861c808fd60827ab6cfbffe604959",
+        "volumeUSD": "1560258668.282212439294631775264073",
+        "token0": {
+          "id": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+          "decimals": "18",
+          "name": "Wrapped Ether"
+        },
+        "token1": {
+          "id": "0xfea7a6a0b346362bf88a9e4a88416b77a57d6c2a",
+          "decimals": "18",
+          "name": "Magic Internet Money"
+        }
+      },
+      {
+        "id": "0xaa5bd49f2162ffdc15634c87a77ac67bd51c6a6d",
+        "volumeUSD": "122709210.4300987722844420609797421",
+        "token0": {
+          "id": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+          "decimals": "18",
+          "name": "Wrapped Ether"
+        },
+        "token1": {
+          "id": "0x8d9ba570d6cb60c7e3e0f31343efe75ab8e65fb1",
+          "decimals": "18",
+          "name": "Governance OHM"
+        }
+      },
+      {
+        "id": "0x36970fc0dc6f3e21c924997bdf4df2a790ddf503",
+        "volumeUSD": "2720212.454527940328161904151125134",
+        "token0": {
+          "id": "0x2c7513f299778a84797f293503db1a73a15fd48d",
+          "decimals": "18",
+          "name": "OpenbetAI"
+        },
+        "token1": {
+          "id": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+          "decimals": "18",
+          "name": "Wrapped Ether"
+        }
+      },
+      {
+        "id": "0x74f9a230f592c16ab10d912e0e649da72db12ead",
+        "volumeUSD": "1364089.437377159628872550567550127",
+        "token0": {
+          "id": "0x70466ddfba1e3bfcb4a2528585c8b474903f5a07",
+          "decimals": "10",
+          "name": "Kronos"
+        },
+        "token1": {
+          "id": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+          "decimals": "18",
+          "name": "Wrapped Ether"
+        }
+      },
+      {
+        "id": "0x24704aff49645d32655a76df6d407e02d146dafc",
+        "volumeUSD": "313087063.444485727468639581514496",
+        "token0": {
+          "id": "0x0c4681e6c0235179ec3d4f4fc4df3d14fdd96017",
+          "decimals": "18",
+          "name": "Radiant"
+        },
+        "token1": {
+          "id": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+          "decimals": "18",
+          "name": "Wrapped Ether"
+        }
+      },
+      {
+        "id": "0xc5ffd083b983aaf823a9b485b207f898ed2f32dc",
+        "volumeUSD": "4947331.73063397337776702148909552",
+        "token0": {
+          "id": "0x09ad12552ec45f82be90b38dfe7b06332a680864",
+          "decimals": "18",
+          "name": "Adamant Token (Arbitrum)"
+        },
+        "token1": {
+          "id": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+          "decimals": "18",
+          "name": "Wrapped Ether"
+        }
+      },
+      {
+        "id": "0x8e89f6d18086bcb660826b6de0e2a178f6155153",
+        "volumeUSD": "27078593.58329516398465706061796544",
+        "token0": {
+          "id": "0x02150e97271fdc0d6e3a16d9094a0948266f07dd",
+          "decimals": "0",
+          "name": "unknown"
+        },
+        "token1": {
+          "id": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+          "decimals": "18",
+          "name": "Wrapped Ether"
+        }
+      },
+      {
+        "id": "0x3221022e37029923ace4235d812273c5a42c322d",
+        "volumeUSD": "54917404.30695040368839158140319433",
+        "token0": {
+          "id": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+          "decimals": "18",
+          "name": "Wrapped Ether"
+        },
+        "token1": {
+          "id": "0xd4d42f0b6def4ce0383636770ef773390d85c61a",
+          "decimals": "18",
+          "name": "SushiToken"
+        }
+      },
+      {
+        "id": "0x5dcf474814515b58ca0ca5e80bbb00d18c5b5cf8",
+        "volumeUSD": "34490688.67780142451164721102150816",
+        "token0": {
+          "id": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+          "decimals": "18",
+          "name": "Wrapped Ether"
+        },
+        "token1": {
+          "id": "0x93c15cd7de26f07265f0272e0b831c5d7fab174f",
+          "decimals": "18",
+          "name": "Liquid"
+        }
+      },
+      {
+        "id": "0xbd80923830b1b122dce0c446b704621458329f1d",
+        "volumeUSD": "314914.6235602043546953201932563169",
+        "token0": {
+          "id": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+          "decimals": "18",
+          "name": "Wrapped Ether"
+        },
+        "token1": {
+          "id": "0xe20b9e246db5a0d21bf9209e4858bc9a3ff7a034",
+          "decimals": "18",
+          "name": "Wrapped Banano"
+        }
+      },
+      {
+        "id": "0x27af29fc43cd28df7b2bacc1e4a00bc6cd1dc1f7",
+        "volumeUSD": "2597822.120169834856664228221676685",
+        "token0": {
+          "id": "0x6551fa83f0ff244d014b432e487d3a3b444bd0a6",
+          "decimals": "9",
+          "name": "The Root Network"
+        },
+        "token1": {
+          "id": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+          "decimals": "18",
+          "name": "Wrapped Ether"
+        }
+      },
+      {
+        "id": "0x9c5397dbcd8b039c5fc8b1bc2602fa2767567149",
+        "volumeUSD": "3395777.92347848362998106492481088",
+        "token0": {
+          "id": "0x123389c2f0e9194d9ba98c21e63c375b67614108",
+          "decimals": "18",
+          "name": "EthereumMax"
+        },
+        "token1": {
+          "id": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+          "decimals": "18",
+          "name": "Wrapped Ether"
+        }
+      },
+      {
+        "id": "0x3bfb1ac033ff0ae278be0583fccc900fbd9382c6",
+        "volumeUSD": "2399957.979655972069782136758609525",
+        "token0": {
+          "id": "0x3082cc23568ea640225c2467653db90e9250aaa0",
+          "decimals": "18",
+          "name": "Radiant"
+        },
+        "token1": {
+          "id": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+          "decimals": "18",
+          "name": "Wrapped Ether"
+        }
+      },
+      {
+        "id": "0x3b1afeed07b49652df107145feb493c251545619",
+        "volumeUSD": "12843847.55123909115572691121054988",
+        "token0": {
+          "id": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+          "decimals": "18",
+          "name": "Wrapped Ether"
+        },
+        "token1": {
+          "id": "0x876ec6be52486eeec06bc06434f3e629d695c6ba",
+          "decimals": "18",
+          "name": "FluidFi"
+        }
+      },
+      {
+        "id": "0x128d90ffe1c5cb2eeb030547fd4ca421cce55ae3",
+        "volumeUSD": "757521.4486267488061513173868994305",
+        "token0": {
+          "id": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+          "decimals": "18",
+          "name": "Wrapped Ether"
+        },
+        "token1": {
+          "id": "0x85c3e9546e1bd65cae10b69c49b8c331b29d17a3",
+          "decimals": "18",
+          "name": "reDao"
+        }
+      },
+      {
+        "id": "0xb0d62768e2fb9bd437a51b993b77b93ac9f249d5",
+        "volumeUSD": "2084875.349611431771872570577280077",
+        "token0": {
+          "id": "0x5979d7b546e38e414f7e9822514be443a4800529",
+          "decimals": "18",
+          "name": "Wrapped liquid staked Ether 2.0"
+        },
+        "token1": {
+          "id": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+          "decimals": "18",
+          "name": "Wrapped Ether"
+        }
+      },
+      {
+        "id": "0x91e13d076acb6baad2df435dd0e10adf1b19c8d6",
+        "volumeUSD": "2348963.066994819755746766152033028",
+        "token0": {
+          "id": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+          "decimals": "18",
+          "name": "Wrapped Ether"
+        },
+        "token1": {
+          "id": "0xc385267adfb56fa7608c3d509d368fd84c033613",
+          "decimals": "18",
+          "name": "Tulip Game"
+        }
+      },
+      {
+        "id": "0x480ecf204f510404a720ae9715713a6e682117f9",
+        "volumeUSD": "121739.4246079210087938969278488864",
+        "token0": {
+          "id": "0xfb9fed8cb962548a11fe7f6f282949061395c7f5",
+          "decimals": "18",
+          "name": "NUON"
+        },
+        "token1": {
+          "id": "0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9",
+          "decimals": "6",
+          "name": "Tether USD"
+        }
+      },
+      {
+        "id": "0xea80d98658935e97703d4f52b3a24de2ebc4f5bb",
+        "volumeUSD": "22801.60168886667781791413506311504",
+        "token0": {
+          "id": "0x6bb45804e7d5375e8fbeee505392f5ecc4e76c95",
+          "decimals": "18",
+          "name": "Saint Inu"
+        },
+        "token1": {
+          "id": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+          "decimals": "18",
+          "name": "Wrapped Ether"
+        }
+      },
+      {
+        "id": "0xceb9d5900c74ae36a3f20ad51ca42b19f8f2366b",
+        "volumeUSD": "543696.0368578144511736724808244946",
+        "token0": {
+          "id": "0x06e90a57d1ece8752d6ce92d1ad348ead5eae4f4",
+          "decimals": "18",
+          "name": "Real Smurf Cat"
+        },
+        "token1": {
+          "id": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+          "decimals": "18",
+          "name": "Wrapped Ether"
+        }
+      },
+      {
+        "id": "0xf89c3657aca0f457c7d50d2b8cc746f46fc7e00f",
+        "volumeUSD": "30120027.45109775042044091499392273",
+        "token0": {
+          "id": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+          "decimals": "18",
+          "name": "Wrapped Ether"
+        },
+        "token1": {
+          "id": "0xf8388c2b6edf00e2e27eef5200b1befb24ce141d",
+          "decimals": "18",
+          "name": "Nola"
+        }
+      },
+      {
+        "id": "0x70df9dd83be2a9f9fcc58dd7c00d032d007b7859",
+        "volumeUSD": "156931020.0897457989101618693751337",
+        "token0": {
+          "id": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+          "decimals": "18",
+          "name": "Wrapped Ether"
+        },
+        "token1": {
+          "id": "0xed3fb761414da74b74f33e5c5a1f78104b188dfc",
+          "decimals": "18",
+          "name": "ArbiNYAN"
+        }
+      },
+      {
+        "id": "0x3d2d453b56f4c09950804fd5e42f12a4a237c5e6",
+        "volumeUSD": "2556573.334648659906560975816166275",
+        "token0": {
+          "id": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+          "decimals": "18",
+          "name": "Wrapped Ether"
+        },
+        "token1": {
+          "id": "0xdc8184ba488e949815d4aafb35b3c56ad03b4179",
+          "decimals": "18",
+          "name": "Roseon"
+        }
+      },
+      {
+        "id": "0xa568b3e32452e873513ead050b05076809786916",
+        "volumeUSD": "1009089.990212603609661441930163242",
+        "token0": {
+          "id": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+          "decimals": "18",
+          "name": "Wrapped Ether"
+        },
+        "token1": {
+          "id": "0x98c435070c24e5152fc14d130937a38810c104b9",
+          "decimals": "18",
+          "name": "Kobe"
+        }
+      },
+      {
+        "id": "0x7050a8908e2a60899d8788015148241f0993a3fd",
+        "volumeUSD": "21793523.80715678596156100959953269",
+        "token0": {
+          "id": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+          "decimals": "18",
+          "name": "Wrapped Ether"
+        },
+        "token1": {
+          "id": "0xf97f4df75117a78c1a5a0dbb814af92458539fb4",
+          "decimals": "18",
+          "name": "ChainLink Token"
+        }
+      },
+      {
+        "id": "0x088f6dcde862781db7b01feb67afd265abbc6d90",
+        "volumeUSD": "115902.1164051431050046357969488858",
+        "token0": {
+          "id": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+          "decimals": "18",
+          "name": "Wrapped Ether"
+        },
+        "token1": {
+          "id": "0xf80d589b3dbe130c270a69f1a69d050f268786df",
+          "decimals": "18",
+          "name": "Flux"
+        }
+      },
+      {
+        "id": "0xbc103bba961501b1b8f85623bb027878c174622f",
+        "volumeUSD": "8771810.893242597193548246350984767",
+        "token0": {
+          "id": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+          "decimals": "18",
+          "name": "Wrapped Ether"
+        },
+        "token1": {
+          "id": "0xd26b0c6ef8581e921ae41c66e508c62a581b709d",
+          "decimals": "18",
+          "name": "SEX"
+        }
+      },
+      {
+        "id": "0x2f320ae219acde7671427a881ba4aa0449595314",
+        "volumeUSD": "477103.0287247107260799147517721345",
+        "token0": {
+          "id": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+          "decimals": "18",
+          "name": "Wrapped Ether"
+        },
+        "token1": {
+          "id": "0xe06e99ca3aaeead5431e921e8e521e3d4e86b5c4",
+          "decimals": "18",
+          "name": "Smol"
+        }
+      },
+      {
+        "id": "0x3ecc5a0d8b3456c5e1ab2b110f0a4da923dc49ec",
+        "volumeUSD": "9430379.087646029052082784335992862",
+        "token0": {
+          "id": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+          "decimals": "18",
+          "name": "Wrapped Ether"
+        },
+        "token1": {
+          "id": "0xbcc9c1763d54427bdf5efb6e9eb9494e5a1fbabf",
+          "decimals": "18",
+          "name": "HonorWorld Token"
+        }
+      },
+      {
+        "id": "0xe235e8dfa8ea3b7ffff1c922fa4928bfb7ad964a",
+        "volumeUSD": "1438490.968939416534064702081059306",
+        "token0": {
+          "id": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+          "decimals": "18",
+          "name": "Wrapped Ether"
+        },
+        "token1": {
+          "id": "0x9e758b8a98a42d612b3d38b66a22074dc03d7370",
+          "decimals": "18",
+          "name": "Symbiosis"
+        }
+      },
+      {
+        "id": "0xdf1a6dd4e5b77d7f2143ed73074be26c806754c5",
+        "volumeUSD": "5569597.160937473308506719820279594",
+        "token0": {
+          "id": "0x662d0f9ff837a51cf89a1fe7e0882a906dac08a3",
+          "decimals": "18",
+          "name": "Jones ETH"
+        },
+        "token1": {
+          "id": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+          "decimals": "18",
+          "name": "Wrapped Ether"
+        }
+      },
+      {
+        "id": "0xa3d3c170a79b2c8eb773edffa3976716a42800a9",
+        "volumeUSD": "37344.84614084828921272131221632823",
+        "token0": {
+          "id": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+          "decimals": "18",
+          "name": "Wrapped Ether"
+        },
+        "token1": {
+          "id": "0xcbd34be8b8deb2fb6f5cc5bc14a37c2398db5320",
+          "decimals": "18",
+          "name": "Funicular"
+        }
+      },
+      {
+        "id": "0xc524cdd23facb0eec7ef26421a3227287a94648d",
+        "volumeUSD": "1285972.720966224278660861353807013",
+        "token0": {
+          "id": "0x2598c30330d5771ae9f983979209486ae26de875",
+          "decimals": "18",
+          "name": "Any Inu"
+        },
+        "token1": {
+          "id": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+          "decimals": "18",
+          "name": "Wrapped Ether"
+        }
+      },
+      {
+        "id": "0x2ac7e48ba0d7fd2ab9c5c00747b106141074013f",
+        "volumeUSD": "2901478.199620292675724694373923044",
+        "token0": {
+          "id": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+          "decimals": "18",
+          "name": "Wrapped Ether"
+        },
+        "token1": {
+          "id": "0xdd389517320720f09db75d20a27d8a2cfa5f8568",
+          "decimals": "18",
+          "name": "AI Card Render"
+        }
+      },
+      {
+        "id": "0x47d6716cce5741f3a44abba29ff59afd29ddea99",
+        "volumeUSD": "1093.255394391121318372022968206731",
+        "token0": {
+          "id": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+          "decimals": "18",
+          "name": "Wrapped Ether"
+        },
+        "token1": {
+          "id": "0x8abfa6a4f4b9865b0e7acfdce1839a2584636d06",
+          "decimals": "18",
+          "name": "MAGIKAL.ai"
+        }
+      },
+      {
+        "id": "0xb750e23497d942f418fcc80d1ea796ac96ed879d",
+        "volumeUSD": "6101593.965004331707500734173559456",
+        "token0": {
+          "id": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+          "decimals": "18",
+          "name": "Wrapped Ether"
+        },
+        "token1": {
+          "id": "0xb98058640970d8aa7bbce3b067b2d63c14143786",
+          "decimals": "18",
+          "name": "Baby Arbitrum"
+        }
+      },
+      {
+        "id": "0x0b07d8a47ac0317aa84e3592b8fcd99a49bbd2a2",
+        "volumeUSD": "1465918.060798550272229741084301397",
+        "token0": {
+          "id": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+          "decimals": "18",
+          "name": "Wrapped Ether"
+        },
+        "token1": {
+          "id": "0xa5dd76c46de4d800ca9f985105a36b1f3abf7969",
+          "decimals": "18",
+          "name": "McDonalds Token"
+        }
+      },
+      {
+        "id": "0x82729ca4c170a2d9a4941b3e51f63a709140707b",
+        "volumeUSD": "183498.9351582080336817768966212695",
+        "token0": {
+          "id": "0x897e6f38e8fdb153a98608a04c123b25f919dda2",
+          "decimals": "18",
+          "name": "Walker"
+        },
+        "token1": {
+          "id": "0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9",
+          "decimals": "6",
+          "name": "Tether USD"
+        }
+      },
+      {
+        "id": "0x713adaf6ce3e885f987569e0a145dbee106121a7",
+        "volumeUSD": "9370024.054938008909549216610190831",
+        "token0": {
+          "id": "0x352f4bf396a7353a0877f99e99757e5d294df374",
+          "decimals": "18",
+          "name": "Sundae Token"
+        },
+        "token1": {
+          "id": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+          "decimals": "18",
+          "name": "Wrapped Ether"
+        }
+      },
+      {
+        "id": "0xc858ee896af182ecee5c8b95d3e8cbbec058383e",
+        "volumeUSD": "474808.4117400150960803824636863322",
+        "token0": {
+          "id": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+          "decimals": "18",
+          "name": "Wrapped Ether"
+        },
+        "token1": {
+          "id": "0x986a3db4317177b4f84b05127e9e39a7abd7187a",
+          "decimals": "18",
+          "name": "CatKing"
+        }
+      },
+      {
+        "id": "0xf38d58689bf2211391337cea24cfeec7bac84b53",
+        "volumeUSD": "26470.31497217399731620621797219019",
+        "token0": {
+          "id": "0x710b3f64fe3e1782fc22d86ca60c50bb4a9bb5ab",
+          "decimals": "9",
+          "name": "Bullz Tower"
+        },
+        "token1": {
+          "id": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+          "decimals": "18",
+          "name": "Wrapped Ether"
+        }
+      },
+      {
+        "id": "0x2524a6f09baa306b9e3b70e6316b018a08e4fb3b",
+        "volumeUSD": "2463323.346130081229274969269177603",
+        "token0": {
+          "id": "0x2a35c341f4dcf2d18e0fb38e0df50e8a47af1368",
+          "decimals": "18",
+          "name": "Arbitrum Pad"
+        },
+        "token1": {
+          "id": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+          "decimals": "18",
+          "name": "Wrapped Ether"
+        }
+      },
+      {
+        "id": "0x835a1bca3e5da0752dd73bd3f89ac0357fd34943",
+        "volumeUSD": "1768164.294502358334265238793242653",
+        "token0": {
+          "id": "0x2c110867ca90e43d372c1c2e92990b00ea32818b",
+          "decimals": "18",
+          "name": "Stabilize Token"
+        },
+        "token1": {
+          "id": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+          "decimals": "18",
+          "name": "Wrapped Ether"
+        }
+      },
+      {
+        "id": "0x44b320adc0dea8a6d3a2625c636d5de85a3f6c28",
+        "volumeUSD": "494719.154520784345433316547062897",
+        "token0": {
+          "id": "0x1db5d4897573106c693a34479cc875cf963d6ff8",
+          "decimals": "9",
+          "name": "Arbitrumium"
+        },
+        "token1": {
+          "id": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+          "decimals": "18",
+          "name": "Wrapped Ether"
+        }
+      },
+      {
+        "id": "0xe8ee01ae5959d3231506fcdef2d5f3e85987a39c",
+        "volumeUSD": "219440389.9948132163415912031793082",
+        "token0": {
+          "id": "0x10393c20975cf177a3513071bc110f7962cd67da",
+          "decimals": "18",
+          "name": "Jones DAO"
+        },
+        "token1": {
+          "id": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+          "decimals": "18",
+          "name": "Wrapped Ether"
+        }
+      },
+      {
+        "id": "0x1ae52977716e5bfd09a2b1c9ac2406af913c094b",
+        "volumeUSD": "6259225.123548724774239834987015668",
+        "token0": {
+          "id": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+          "decimals": "18",
+          "name": "Wrapped Ether"
+        },
+        "token1": {
+          "id": "0x9e92b9ef3c3cc4053591002f4f04d2aef87bf2d2",
+          "decimals": "18",
+          "name": "DarkMeta"
+        }
+      },
+      {
+        "id": "0x6dc147be79e625e5c9033651238ccce973a0950c",
+        "volumeUSD": "4173560.86850831434576266213061688",
+        "token0": {
+          "id": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+          "decimals": "18",
+          "name": "Wrapped Ether"
+        },
+        "token1": {
+          "id": "0xdee46be9d0b207e5d88d2efd84a045e725a242f7",
+          "decimals": "18",
+          "name": "Pepe"
+        }
+      },
+      {
+        "id": "0x692a0b300366d1042679397e40f3d2cb4b8f7d30",
+        "volumeUSD": "23952562.94853578003226229173464665",
+        "token0": {
+          "id": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+          "decimals": "18",
+          "name": "Wrapped Ether"
+        },
+        "token1": {
+          "id": "0xda10009cbd5d07dd0cecc66161fc93d7c9000da1",
+          "decimals": "18",
+          "name": "Dai Stablecoin"
+        }
+      },
+      {
+        "id": "0x8b2c7f6a5812a17bd402d58cf25398ecc6380fcb",
+        "volumeUSD": "225328.8783225839410550611102037969",
+        "token0": {
+          "id": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+          "decimals": "18",
+          "name": "Wrapped Ether"
+        },
+        "token1": {
+          "id": "0xf87d06a1a9d8a69be38739b182ef7d131ceb7a77",
+          "decimals": "18",
+          "name": "NEGR"
+        }
+      },
+      {
+        "id": "0xd9aca315856233579536c4a504db23e9897a884a",
+        "volumeUSD": "708755.4685142172733614497063430021",
+        "token0": {
+          "id": "0x4d010dbe0c6cdc0571bba026d6dfabbf40c9af28",
+          "decimals": "18",
+          "name": "Gemdrop"
+        },
+        "token1": {
+          "id": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+          "decimals": "18",
+          "name": "Wrapped Ether"
+        }
+      },
+      {
+        "id": "0xefa2ae4d8da62e99ed9744c196b2cbf477c3ff27",
+        "volumeUSD": "500443.9036135031820401070845955667",
+        "token0": {
+          "id": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+          "decimals": "18",
+          "name": "Wrapped Ether"
+        },
+        "token1": {
+          "id": "0xa3e7e143b69aeaa2b435efd7e40c4a7d1d6d8296",
+          "decimals": "9",
+          "name": "Bubble"
+        }
+      },
+      {
+        "id": "0x627446929e02198c0adad59442149a2a8079d933",
+        "volumeUSD": "431420.8194991148435226433715838452",
+        "token0": {
+          "id": "0x54feb100d536130a64c60f485aaef64f1894be83",
+          "decimals": "18",
+          "name": "ArbIsDown"
+        },
+        "token1": {
+          "id": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+          "decimals": "18",
+          "name": "Wrapped Ether"
+        }
+      },
+      {
+        "id": "0x4b1ac748eb93457afb615f035737a5a2383c1232",
+        "volumeUSD": "361562.9959583229878644558406878156",
+        "token0": {
+          "id": "0x5806aa266013d733db093f8a74da733a081f989a",
+          "decimals": "18",
+          "name": "The Wild West"
+        },
+        "token1": {
+          "id": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+          "decimals": "18",
+          "name": "Wrapped Ether"
+        }
+      },
+      {
+        "id": "0x0d91199ab8b6051b3b7e048dc4e44284a23f20c9",
+        "volumeUSD": "61663.53505652509984783321114159208",
+        "token0": {
+          "id": "0x01dc7c21d0bfcfecd310b3c9dde8819b1b2ec38b",
+          "decimals": "18",
+          "name": "Gambler Shiba"
+        },
+        "token1": {
+          "id": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+          "decimals": "18",
+          "name": "Wrapped Ether"
+        }
+      },
+      {
+        "id": "0x7318b733eb7c7a616d2490b142710664f84c2b66",
+        "volumeUSD": "59555.28665328393271059885325902998",
+        "token0": {
+          "id": "0x6f94852831f1d32c1d6e04c2f76aa937292b816b",
+          "decimals": "18",
+          "name": "Michael Saylor"
+        },
+        "token1": {
+          "id": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+          "decimals": "18",
+          "name": "Wrapped Ether"
+        }
+      },
+      {
+        "id": "0x047e339b0220445a9884ed70030e5b317f8e5bc6",
+        "volumeUSD": "756641.4086571869059816727558360548",
+        "token0": {
+          "id": "0x67c31056358b8977ea95a3a899dd380d4bced706",
+          "decimals": "18",
+          "name": "ETHforestAI"
+        },
+        "token1": {
+          "id": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+          "decimals": "18",
+          "name": "Wrapped Ether"
+        }
+      },
+      {
+        "id": "0xa9ef69cac80488ef05926023421214c98f22105d",
+        "volumeUSD": "3933428.2741211313359500938295331",
+        "token0": {
+          "id": "0x1a7bd9edc36fb2b3c0852bcd7438c2a957fd7ad5",
+          "decimals": "9",
+          "name": "ArbiMoon"
+        },
+        "token1": {
+          "id": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+          "decimals": "18",
+          "name": "Wrapped Ether"
+        }
+      },
+      {
+        "id": "0xdfa71cbd067fae08165049e10388146a8b05ccbc",
+        "volumeUSD": "216820.5971910238136202998731993111",
+        "token0": {
+          "id": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+          "decimals": "18",
+          "name": "Wrapped Ether"
+        },
+        "token1": {
+          "id": "0x86b162765811e4d16dd7de17e7a5110953a5a5df",
+          "decimals": "6",
+          "name": "Arb Poppy AI"
+        }
+      },
+      {
+        "id": "0x5588021f7c1fbb2adb02f504ca661a05d50cfc66",
+        "volumeUSD": "12794735.5039687678220206994528212",
+        "token0": {
+          "id": "0x673d6d2da0b1b477464f16267cefc7a8d27bf53f",
+          "decimals": "8",
+          "name": "METALAND"
+        },
+        "token1": {
+          "id": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+          "decimals": "18",
+          "name": "Wrapped Ether"
+        }
+      },
+      {
+        "id": "0x57b85fef094e10b5eecdf350af688299e9553378",
+        "volumeUSD": "634449.09672546819608083407680539",
+        "token0": {
+          "id": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+          "decimals": "18",
+          "name": "Wrapped Ether"
+        },
+        "token1": {
+          "id": "0xaf88d065e77c8cc2239327c5edb3a432268e5831",
+          "decimals": "6",
+          "name": "USD Coin"
+        }
+      },
+      {
+        "id": "0xb0a5b5649104ccf27f9d14e23894c025c21fd4b5",
+        "volumeUSD": "418487.3847068576636114822940682581",
+        "token0": {
+          "id": "0x631e77a55a6ddf7b9a95d5a1a1bcab6d938c6747",
+          "decimals": "0",
+          "name": "ArbiBomb"
+        },
+        "token1": {
+          "id": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+          "decimals": "18",
+          "name": "Wrapped Ether"
+        }
+      },
+      {
+        "id": "0x280a16f5d09d3620256f06b75c1ca3ec77a06710",
+        "volumeUSD": "831479.2251974822376713299047394232",
+        "token0": {
+          "id": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+          "decimals": "18",
+          "name": "Wrapped Ether"
+        },
+        "token1": {
+          "id": "0xe021047851012d8e981ebd9f3c2cbb8945e996da",
+          "decimals": "9",
+          "name": "GPT"
+        }
+      },
+      {
+        "id": "0x7ad26eefc5325fe5cf1f65fa9ac8b77f48fe214d",
+        "volumeUSD": "1499802.906444",
+        "token0": {
+          "id": "0x04d4085fdf69ae8ad44aa5b6b41356c7d44968f3",
+          "decimals": "9",
+          "name": "Chimpzee"
+        },
+        "token1": {
+          "id": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+          "decimals": "6",
+          "name": "USD Coin (Arb1)"
+        }
+      },
+      {
+        "id": "0x8b3263136f27b3b24dc3854344e9a6a3b34522e6",
+        "volumeUSD": "1547106.225133336509458876931348423",
+        "token0": {
+          "id": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+          "decimals": "18",
+          "name": "Wrapped Ether"
+        },
+        "token1": {
+          "id": "0xf387359fab862eaef4b7c03d2174755918c58d4d",
+          "decimals": "9",
+          "name": "YOGI"
+        }
+      },
+      {
+        "id": "0xd8fde8f4d4abbd9dde39f4a06a9d0b6f2c7df946",
+        "volumeUSD": "590678.7391724685616017393673645239",
+        "token0": {
+          "id": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+          "decimals": "18",
+          "name": "Wrapped Ether"
+        },
+        "token1": {
+          "id": "0xebd72d1ad20530d18f6b63dbc763dad8922952ba",
+          "decimals": "18",
+          "name": "AIR"
+        }
+      },
+      {
+        "id": "0x8234462742dbbaaf394ab1e7a1b7ae118e9172d4",
+        "volumeUSD": "1687384.053670843905027732045827561",
+        "token0": {
+          "id": "0x12f7cf4f2e3f87678ec5207fc920c815e31524df",
+          "decimals": "18",
+          "name": "Dotlab"
+        },
+        "token1": {
+          "id": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+          "decimals": "18",
+          "name": "Wrapped Ether"
+        }
+      },
+      {
+        "id": "0x8d62a927addcd987a2caf0cb656c694424986af8",
+        "volumeUSD": "2399491.65989309101464844934915725",
+        "token0": {
+          "id": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+          "decimals": "18",
+          "name": "Wrapped Ether"
+        },
+        "token1": {
+          "id": "0xfb08dac00da5e400915af269245c722718293111",
+          "decimals": "18",
+          "name": "Ronald McDonald Token"
+        }
+      },
+      {
+        "id": "0xf4a738d9cae344cea4165f335d478493a7946f24",
+        "volumeUSD": "4653091.11138569077971453051065325",
+        "token0": {
+          "id": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+          "decimals": "18",
+          "name": "Wrapped Ether"
+        },
+        "token1": {
+          "id": "0x86a1012d437bbff84fbdf62569d12d4fd3396f8c",
+          "decimals": "18",
+          "name": "Arbys"
+        }
+      },
+      {
+        "id": "0x95b3dfcf11401b1448684156728d677dd032380d",
+        "volumeUSD": "13266.67382931068579577125745129094",
+        "token0": {
+          "id": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+          "decimals": "18",
+          "name": "Wrapped Ether"
+        },
+        "token1": {
+          "id": "0xc2737ea9c4c21e12b8180712923a92607a0bf361",
+          "decimals": "18",
+          "name": "Pandora"
+        }
+      },
+      {
+        "id": "0x0a59f71431bb9cfbec0af9b8d1c043017b38e761",
+        "volumeUSD": "126460.6533604192416293089882267815",
+        "token0": {
+          "id": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+          "decimals": "18",
+          "name": "Wrapped Ether"
+        },
+        "token1": {
+          "id": "0xf2b945860457c2c2aed2396f942bb34eb55e753f",
+          "decimals": "9",
+          "name": "Clippy"
+        }
+      },
+      {
+        "id": "0x2f73fb16933585ba089100c05561d58fd342bdf5",
+        "volumeUSD": "555608.2587543886467312976056049329",
+        "token0": {
+          "id": "0xc136e6b376a9946b156db1ed3a34b08afdaed76d",
+          "decimals": "18",
+          "name": "CreDA Protocol Token"
+        },
+        "token1": {
+          "id": "0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9",
+          "decimals": "6",
+          "name": "Tether USD"
+        }
+      },
+      {
+        "id": "0xbcd23fc5ea00237dd6473410490430a568fc8362",
+        "volumeUSD": "28998.72211403698131089917318948146",
+        "token0": {
+          "id": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+          "decimals": "18",
+          "name": "Wrapped Ether"
+        },
+        "token1": {
+          "id": "0xf5cc9c66f42762fac800972a04b28183cc65bd6c",
+          "decimals": "18",
+          "name": "EGGOR Token"
+        }
+      }
+    ]
+  }
+}
