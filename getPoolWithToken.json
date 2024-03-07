@@ -1,0 +1,1605 @@
+
+{"liquidityPools": [
+    {"dexId" : "UNI_V3",
+"poolId": "0xc31e54c7a869b9fcbecc14363cf510d1c41fa443",
+      "cumulativeVolumeUSD": "48233529358.53141671729708125471864",
+      "tokens": [
+        {
+          "_address": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+          "decimals": 18,
+          "name": "WETH"
+        },
+        {
+          "_address": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+          "decimals": 6,
+          "name": "USDC"
+        }
+      ]
+    },
+    {"dexId" : "UNI_V3",
+"poolId": "0x641c00a822e8b671738d32a431a4fb6074e5c79d",
+      "cumulativeVolumeUSD": "13106321424.75528310941830870433219",
+      "tokens": [
+        {
+          "_address": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+          "decimals": 18,
+          "name": "WETH"
+        },
+        {
+          "_address": "0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9",
+          "decimals": 6,
+          "name": "USDT"
+        }
+      ]
+    },
+    {"dexId" : "UNI_V3",
+"poolId": "0xc6f780497a95e246eb9449f5e4770916dcd6396a",
+      "cumulativeVolumeUSD": "11314862428.16846125671391913155734",
+      "tokens": [
+        {
+          "_address": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+          "decimals": 18,
+          "name": "WETH"
+        },
+        {
+          "_address": "0x912ce59144191c1204e64559fe8253a0e49e6548",
+          "decimals": 18,
+          "name": "Arbitrum"
+        }
+      ]
+    },
+    {"dexId" : "UNI_V3",
+"poolId": "0xcda53b1f66614552f834ceef361a8d12a0b8dad8",
+      "cumulativeVolumeUSD": "7809290474.968251",
+      "tokens": [
+        {
+          "_address": "0x912ce59144191c1204e64559fe8253a0e49e6548",
+          "decimals": 18,
+          "name": "Arbitrum"
+        },
+        {
+          "_address": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+          "decimals": 6,
+          "name": "USDC"
+        }
+      ]
+    },
+    {"dexId" : "UNI_V3",
+"poolId": "0x2f5e87c9312fa29aed5c179e456625d79015299c",
+      "cumulativeVolumeUSD": "5898483523.217256512971353817455998",
+      "tokens": [
+        {
+          "_address": "0x2f2a2543b76a4166549f7aab2e75bef0aefc5b0f",
+          "decimals": 8,
+          "name": "Wrapped BTC"
+        },
+        {
+          "_address": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+          "decimals": 18,
+          "name": "WETH"
+        }
+      ]
+    },
+    {"dexId" : "UNI_V3",
+"poolId": "0x1aeedd3727a6431b8f070c0afaa81cc74f273882",
+      "cumulativeVolumeUSD": "1996601226.982541337224976731032269",
+      "tokens": [
+        {
+          "_address": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+          "decimals": 18,
+          "name": "WETH"
+        },
+        {
+          "_address": "0xfc5a1a6eb076a2c7ad06ed22c90d7e710e35ad0a",
+          "decimals": 18,
+          "name": "GMX"
+        }
+      ]
+    },
+    {"dexId" : "UNI_V3",
+"poolId": "0x8c9d230d45d6cfee39a6680fb7cb7e8de7ea8e71",
+      "cumulativeVolumeUSD": "1810705862.200395",
+      "tokens": [
+        {
+          "_address": "0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9",
+          "decimals": 6,
+          "name": "USDT"
+        },
+        {
+          "_address": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+          "decimals": 6,
+          "name": "USDC"
+        }
+      ]
+    },
+    {"dexId" : "UNI_V3",
+"poolId": "0x92c63d0e701caae670c9415d91c474f686298f00",
+      "cumulativeVolumeUSD": "1778432476.28999767153713529558336",
+      "tokens": [
+        {
+          "_address": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+          "decimals": 18,
+          "name": "WETH"
+        },
+        {
+          "_address": "0x912ce59144191c1204e64559fe8253a0e49e6548",
+          "decimals": 18,
+          "name": "Arbitrum"
+        }
+      ]
+    },
+    {"dexId" : "UNI_V3",
+"poolId": "0x17c14d2c404d167802b16c450d3c99f88f2c4f4d",
+      "cumulativeVolumeUSD": "1773881366.90261669513426176748447",
+      "tokens": [
+        {
+          "_address": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+          "decimals": 18,
+          "name": "WETH"
+        },
+        {
+          "_address": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+          "decimals": 6,
+          "name": "USDC"
+        }
+      ]
+    },
+    {"dexId" : "UNI_V3",
+"poolId": "0x80a9ae39310abf666a87c743d6ebbd0e8c42158e",
+      "cumulativeVolumeUSD": "1403034846.95422055034431866104637",
+      "tokens": [
+        {
+          "_address": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+          "decimals": 18,
+          "name": "WETH"
+        },
+        {
+          "_address": "0xfc5a1a6eb076a2c7ad06ed22c90d7e710e35ad0a",
+          "decimals": 18,
+          "name": "GMX"
+        }
+      ]
+    },
+    {"dexId" : "UNI_V3",
+"poolId": "0x81c48d31365e6b526f6bbadc5c9aafd822134863",
+      "cumulativeVolumeUSD": "897959776.108052",
+      "tokens": [
+        {
+          "_address": "0x912ce59144191c1204e64559fe8253a0e49e6548",
+          "decimals": 18,
+          "name": "Arbitrum"
+        },
+        {
+          "_address": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+          "decimals": 6,
+          "name": "USDC"
+        }
+      ]
+    },
+    {"dexId" : "UNI_V3",
+"poolId": "0x35218a1cbac5bbc3e57fd9bd38219d37571b3537",
+      "cumulativeVolumeUSD": "676413623.84825011498534438474863",
+      "tokens": [
+        {
+          "_address": "0x5979d7b546e38e414f7e9822514be443a4800529",
+          "decimals": 18,
+          "name": "Wrapped liquid staked Ether 2.0"
+        },
+        {
+          "_address": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+          "decimals": 18,
+          "name": "WETH"
+        }
+      ]
+    },
+    {"dexId" : "UNI_V3",
+"poolId": "0x468b88941e7cc0b88c1869d68ab6b570bcef62ff",
+      "cumulativeVolumeUSD": "559768311.39599306281565466065546",
+      "tokens": [
+        {
+          "_address": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+          "decimals": 18,
+          "name": "WETH"
+        },
+        {
+          "_address": "0xf97f4df75117a78c1a5a0dbb814af92458539fb4",
+          "decimals": 18,
+          "name": "ChainLink Token"
+        }
+      ]
+    },
+    {"dexId" : "UNI_V3",
+"poolId": "0x13398e27a21be1218b6900cbedf677571df42a48",
+      "cumulativeVolumeUSD": "550605596.2678535",
+      "tokens": [
+        {
+          "_address": "0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9",
+          "decimals": 6,
+          "name": "USDT"
+        },
+        {
+          "_address": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+          "decimals": 6,
+          "name": "USDC"
+        }
+      ]
+    },
+    {"dexId" : "UNI_V3",
+"poolId": "0xdbaeb7f0dfe3a0aafd798ccecb5b22e708f7852c",
+      "cumulativeVolumeUSD": "497554015.44219620315728420375305",
+      "tokens": [
+        {
+          "_address": "0x0c880f6761f1af8d9aa9c466984b80dab9a8c9e8",
+          "decimals": 18,
+          "name": "Pendle"
+        },
+        {
+          "_address": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+          "decimals": 18,
+          "name": "WETH"
+        }
+      ]
+    },
+    {"dexId" : "UNI_V3",
+"poolId": "0x446bf9748b4ea044dd759d9b9311c70491df8f29",
+      "cumulativeVolumeUSD": "493149795.06800007715124861423541",
+      "tokens": [
+        {
+          "_address": "0x3082cc23568ea640225c2467653db90e9250aaa0",
+          "decimals": 18,
+          "name": "Radiant"
+        },
+        {
+          "_address": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+          "decimals": 18,
+          "name": "WETH"
+        }
+      ]
+    },
+    {"dexId" : "UNI_V3",
+"poolId": "0x149e36e72726e0bcea5c59d40df2c43f60f5a22d",
+      "cumulativeVolumeUSD": "434572860.7175381900716375333798517",
+      "tokens": [
+        {
+          "_address": "0x2f2a2543b76a4166549f7aab2e75bef0aefc5b0f",
+          "decimals": 8,
+          "name": "Wrapped BTC"
+        },
+        {
+          "_address": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+          "decimals": 18,
+          "name": "WETH"
+        }
+      ]
+    },
+    {"dexId" : "UNI_V3",
+"poolId": "0x59d72ddb29da32847a4665d08ffc8464a7185fae",
+      "cumulativeVolumeUSD": "399628262.12679623742739813199362",
+      "tokens": [
+        {
+          "_address": "0x539bde0d7dbd336b79148aa742883198bbf60342",
+          "decimals": 18,
+          "name": "MAGIC"
+        },
+        {
+          "_address": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+          "decimals": 18,
+          "name": "WETH"
+        }
+      ]
+    },
+    {"dexId" : "UNI_V3",
+"poolId": "0xf0428617433652c9dc6d1093a42adfbf30d29f74",
+      "cumulativeVolumeUSD": "337465371.589667",
+      "tokens": [
+        {
+          "_address": "0xda10009cbd5d07dd0cecc66161fc93d7c9000da1",
+          "decimals": 18,
+          "name": "Dai Stablecoin"
+        },
+        {
+          "_address": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+          "decimals": 6,
+          "name": "USDC"
+        }
+      ]
+    },
+    {"dexId" : "UNI_V3",
+"poolId": "0xb791ad21ba45c76629003b4a2f04c0d544406e37",
+      "cumulativeVolumeUSD": "334789968.130008",
+      "tokens": [
+        {
+          "_address": "0x912ce59144191c1204e64559fe8253a0e49e6548",
+          "decimals": 18,
+          "name": "Arbitrum"
+        },
+        {
+          "_address": "0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9",
+          "decimals": 6,
+          "name": "USDT"
+        }
+      ]
+    },
+    {"dexId" : "UNI_V3",
+"poolId": "0xd37af656abf91c7f548fffc0133175b5e4d3d5e6",
+      "cumulativeVolumeUSD": "311004859.274691",
+      "tokens": [
+        {
+          "_address": "0xda10009cbd5d07dd0cecc66161fc93d7c9000da1",
+          "decimals": 18,
+          "name": "Dai Stablecoin"
+        },
+        {
+          "_address": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+          "decimals": 6,
+          "name": "USDC"
+        }
+      ]
+    },
+    {"dexId" : "UNI_V3",
+"poolId": "0xe754841b77c874135caca3386676e886459c2d61",
+      "cumulativeVolumeUSD": "294400772.94528320411611762989974",
+      "tokens": [
+        {
+          "_address": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+          "decimals": 18,
+          "name": "WETH"
+        },
+        {
+          "_address": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+          "decimals": 6,
+          "name": "USDC"
+        }
+      ]
+    },
+    {"dexId" : "UNI_V3",
+"poolId": "0xc91b7b39bbb2c733f0e7459348fd0c80259c8471",
+      "cumulativeVolumeUSD": "288239389.89188261955060551783299",
+      "tokens": [
+        {
+          "_address": "0x18c11fd286c5ec11c3b683caa813b77f5163a122",
+          "decimals": 18,
+          "name": "Gains Network"
+        },
+        {
+          "_address": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+          "decimals": 18,
+          "name": "WETH"
+        }
+      ]
+    },
+    {"dexId" : "UNI_V3",
+"poolId": "0x97bca422ec0ee4851f2110ea743c1cd0a14835a1",
+      "cumulativeVolumeUSD": "267106561.319462",
+      "tokens": [
+        {
+          "_address": "0x912ce59144191c1204e64559fe8253a0e49e6548",
+          "decimals": 18,
+          "name": "Arbitrum"
+        },
+        {
+          "_address": "0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9",
+          "decimals": 6,
+          "name": "USDT"
+        }
+      ]
+    },
+    {"dexId" : "UNI_V3",
+"poolId": "0x7f580f8a02b759c350e6b8340e7c2d4b8162b6a9",
+      "cumulativeVolumeUSD": "244770610.98706",
+      "tokens": [
+        {
+          "_address": "0xda10009cbd5d07dd0cecc66161fc93d7c9000da1",
+          "decimals": 18,
+          "name": "Dai Stablecoin"
+        },
+        {
+          "_address": "0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9",
+          "decimals": 6,
+          "name": "USDT"
+        }
+      ]
+    },
+    {"dexId" : "UNI_V3",
+"poolId": "0xac70bd92f89e6739b3a08db9b6081a923912f73d",
+      "cumulativeVolumeUSD": "233217051.966967538712278916028685",
+      "tokens": [
+        {
+          "_address": "0x2f2a2543b76a4166549f7aab2e75bef0aefc5b0f",
+          "decimals": 8,
+          "name": "Wrapped BTC"
+        },
+        {
+          "_address": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+          "decimals": 6,
+          "name": "USDC"
+        }
+      ]
+    },
+    {"dexId" : "UNI_V3",
+"poolId": "0xbed2589fefae17d62a8a4fdac92fa5895cae90d2",
+      "cumulativeVolumeUSD": "212424808.9505806473058631692978745",
+      "tokens": [
+        {
+          "_address": "0xfc5a1a6eb076a2c7ad06ed22c90d7e710e35ad0a",
+          "decimals": 18,
+          "name": "GMX"
+        },
+        {
+          "_address": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+          "decimals": 6,
+          "name": "USDC"
+        }
+      ]
+    },
+    {"dexId" : "UNI_V3",
+"poolId": "0xa67f72f21bd9f91db2da2d260590da5e6c437009",
+      "cumulativeVolumeUSD": "200899227.43301845603875550413363",
+      "tokens": [
+        {
+          "_address": "0x00cbcf7b3d37844e44b888bc747bdd75fcf4e555",
+          "decimals": 18,
+          "name": "xPet.tech Token"
+        },
+        {
+          "_address": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+          "decimals": 18,
+          "name": "WETH"
+        }
+      ]
+    },
+    {"dexId" : "UNI_V3",
+"poolId": "0x14353445c8329df76e6f15e9ead18fa2d45a8bb6",
+      "cumulativeVolumeUSD": "182468186.30916170848672879728162",
+      "tokens": [
+        {
+          "_address": "0x35751007a407ca6feffe80b3cb397736d2cf4dbe",
+          "decimals": 18,
+          "name": "Wrapped eETH"
+        },
+        {
+          "_address": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+          "decimals": 18,
+          "name": "WETH"
+        }
+      ]
+    },
+    {"dexId" : "UNI_V3",
+"poolId": "0x50450351517117cb58189edba6bbad6284d45902",
+      "cumulativeVolumeUSD": "168067152.6366544457219019985",
+      "tokens": [
+        {
+          "_address": "0xd74f5255d557944cf7dd0e45ff521520002d5748",
+          "decimals": 18,
+          "name": "Sperax USD"
+        },
+        {
+          "_address": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+          "decimals": 6,
+          "name": "USDC"
+        }
+      ]
+    },
+    {"dexId" : "UNI_V3",
+"poolId": "0x92fd143a8fa0c84e016c2765648b9733b0aa519e",
+      "cumulativeVolumeUSD": "166146722.51897102990940914123072",
+      "tokens": [
+        {
+          "_address": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+          "decimals": 18,
+          "name": "WETH"
+        },
+        {
+          "_address": "0x912ce59144191c1204e64559fe8253a0e49e6548",
+          "decimals": 18,
+          "name": "Arbitrum"
+        }
+      ]
+    },
+    {"dexId" : "UNI_V3",
+"poolId": "0x2039f8c9cd32ba9cd2ea7e575d5b1abea93f7527",
+      "cumulativeVolumeUSD": "157051486.5789353930548931945650595",
+      "tokens": [
+        {
+          "_address": "0xfc5a1a6eb076a2c7ad06ed22c90d7e710e35ad0a",
+          "decimals": 18,
+          "name": "GMX"
+        },
+        {
+          "_address": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+          "decimals": 6,
+          "name": "USDC"
+        }
+      ]
+    },
+    {"dexId" : "UNI_V3",
+"poolId": "0xa8328bf492ba1b77ad6381b3f7567d942b000baf",
+      "cumulativeVolumeUSD": "150528711.590712",
+      "tokens": [
+        {
+          "_address": "0x912ce59144191c1204e64559fe8253a0e49e6548",
+          "decimals": 18,
+          "name": "Arbitrum"
+        },
+        {
+          "_address": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+          "decimals": 6,
+          "name": "USDC"
+        }
+      ]
+    },
+    {"dexId" : "UNI_V3",
+"poolId": "0x7e7fb3cceca5f2ac952edf221fd2a9f62e411980",
+      "cumulativeVolumeUSD": "136522970.00804194436779999525286",
+      "tokens": [
+        {
+          "_address": "0x539bde0d7dbd336b79148aa742883198bbf60342",
+          "decimals": 18,
+          "name": "MAGIC"
+        },
+        {
+          "_address": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+          "decimals": 18,
+          "name": "WETH"
+        }
+      ]
+    },
+    {"dexId" : "UNI_V3",
+"poolId": "0xc7341e85996eeb05897d3dec79448b6e4ccc09cf",
+      "cumulativeVolumeUSD": "131693165.614518",
+      "tokens": [
+        {
+          "_address": "0x5979d7b546e38e414f7e9822514be443a4800529",
+          "decimals": 18,
+          "name": "Wrapped liquid staked Ether 2.0"
+        },
+        {
+          "_address": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+          "decimals": 6,
+          "name": "USDC"
+        }
+      ]
+    },
+    {"dexId" : "UNI_V3",
+"poolId": "0xaeeceec4b31d3c1057210115bf176ebb05b9805d",
+      "cumulativeVolumeUSD": "126889593.684852",
+      "tokens": [
+        {
+          "_address": "0xeb466342c4d449bc9f53a865d5cb90586f405215",
+          "decimals": 6,
+          "name": "Axelar Wrapped USDC"
+        },
+        {
+          "_address": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+          "decimals": 6,
+          "name": "USDC"
+        }
+      ]
+    },
+    {"dexId" : "UNI_V3",
+"poolId": "0xc82819f72a9e77e2c0c3a69b3196478f44303cf4",
+      "cumulativeVolumeUSD": "115846132.469179140432050511623445",
+      "tokens": [
+        {
+          "_address": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+          "decimals": 18,
+          "name": "WETH"
+        },
+        {
+          "_address": "0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9",
+          "decimals": 6,
+          "name": "USDT"
+        }
+      ]
+    },
+    {"dexId" : "UNI_V3",
+"poolId": "0x10117176f81c285adf4d308d8a85e5c6977e7166",
+      "cumulativeVolumeUSD": "102943918.90541258707350837720896",
+      "tokens": [
+        {
+          "_address": "0x7a6717ceabe536bb9a6bb39182a4cd575d4e222e",
+          "decimals": 9,
+          "name": "Trident"
+        },
+        {
+          "_address": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+          "decimals": 18,
+          "name": "WETH"
+        }
+      ]
+    },
+    {"dexId" : "UNI_V3",
+"poolId": "0xa961f0473da4864c5ed28e00fcc53a3aab056c1b",
+      "cumulativeVolumeUSD": "95664495.68676259702617996263138",
+      "tokens": [
+        {
+          "_address": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+          "decimals": 18,
+          "name": "WETH"
+        },
+        {
+          "_address": "0xda10009cbd5d07dd0cecc66161fc93d7c9000da1",
+          "decimals": 18,
+          "name": "Dai Stablecoin"
+        }
+      ]
+    },
+    {"dexId" : "UNI_V3",
+"poolId": "0x08e0b47588e1ac22bc0f8b4afaa017aaf273f85e",
+      "cumulativeVolumeUSD": "92073448.28528170082127901",
+      "tokens": [
+        {
+          "_address": "0x5575552988a3a80504bbaeb1311674fcfd40ad4b",
+          "decimals": 18,
+          "name": "Sperax"
+        },
+        {
+          "_address": "0xd74f5255d557944cf7dd0e45ff521520002d5748",
+          "decimals": 18,
+          "name": "Sperax USD"
+        }
+      ]
+    },
+    {"dexId" : "UNI_V3",
+"poolId": "0xc24f7d8e51a64dc1238880bd00bb961d54cbeb29",
+      "cumulativeVolumeUSD": "81861711.59371053844143070628241",
+      "tokens": [
+        {
+          "_address": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+          "decimals": 18,
+          "name": "WETH"
+        },
+        {
+          "_address": "0xfa7f8980b0f1e64a2062791cc3b0871572f1f7f0",
+          "decimals": 18,
+          "name": "Uniswap"
+        }
+      ]
+    },
+    {"dexId" : "UNI_V3",
+"poolId": "0x4ddc074f21acf6a056afd0dc5ee16cdfe133498a",
+      "cumulativeVolumeUSD": "81266456.50351292372982570349073",
+      "tokens": [
+        {
+          "_address": "0x4d6c8f6ab59835183bc0100bc819a3f8691691f8",
+          "decimals": 9,
+          "name": "Arcadeum"
+        },
+        {
+          "_address": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+          "decimals": 18,
+          "name": "WETH"
+        }
+      ]
+    },
+    {"dexId" : "UNI_V3",
+"poolId": "0xcf2f020eeee1c1774c86ea70691913ae5e8affcb",
+      "cumulativeVolumeUSD": "80500334.40316623766339853273702568",
+      "tokens": [
+        {
+          "_address": "0x2297aebd383787a160dd0d9f71508148769342e3",
+          "decimals": 8,
+          "name": "Bitcoin"
+        },
+        {
+          "_address": "0x2f2a2543b76a4166549f7aab2e75bef0aefc5b0f",
+          "decimals": 8,
+          "name": "Wrapped BTC"
+        }
+      ]
+    },
+    {"dexId" : "UNI_V3",
+"poolId": "0xefcabb1fa87e99b13d2b33b45ce202dbb65dbda0",
+      "cumulativeVolumeUSD": "78390441.6316828986827461463185",
+      "tokens": [
+        {
+          "_address": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+          "decimals": 18,
+          "name": "WETH"
+        },
+        {
+          "_address": "0xb99d1c4bb87266fb13a423f8df96812ac6b99520",
+          "decimals": 9,
+          "name": "Nitro Cartel"
+        }
+      ]
+    },
+    {"dexId" : "UNI_V3",
+"poolId": "0x7bb5e71fab18feba077b28355f20f5643ceece28",
+      "cumulativeVolumeUSD": "73646246.458556",
+      "tokens": [
+        {
+          "_address": "0x5575552988a3a80504bbaeb1311674fcfd40ad4b",
+          "decimals": 18,
+          "name": "Sperax"
+        },
+        {
+          "_address": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+          "decimals": 6,
+          "name": "USDC"
+        }
+      ]
+    },
+    {"dexId" : "UNI_V3",
+"poolId": "0xa8bd646f72ea828ccbc40fa2976866884f883409",
+      "cumulativeVolumeUSD": "72949721.1571352568967064522449",
+      "tokens": [
+        {
+          "_address": "0x6694340fc020c5e6b96567843da2df01b2ce1eb6",
+          "decimals": 18,
+          "name": "StargateToken"
+        },
+        {
+          "_address": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+          "decimals": 18,
+          "name": "WETH"
+        }
+      ]
+    },
+    {"dexId" : "UNI_V3",
+"poolId": "0x1862200e8e7ce1c0827b792d0f9546156f44f892",
+      "cumulativeVolumeUSD": "72788133.07252586136421065744929",
+      "tokens": [
+        {
+          "_address": "0x6fd58f5a2f3468e35feb098b5f59f04157002407",
+          "decimals": 18,
+          "name": "poor guy"
+        },
+        {
+          "_address": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+          "decimals": 18,
+          "name": "WETH"
+        }
+      ]
+    },
+    {"dexId" : "UNI_V3",
+"poolId": "0xd02a4969dc12bb889754361f8bcf3385ac1b2077",
+      "cumulativeVolumeUSD": "68782772.60866739080860900923796",
+      "tokens": [
+        {
+          "_address": "0x6daf586b7370b14163171544fca24abcc0862ac5",
+          "decimals": 18,
+          "name": "BPET"
+        },
+        {
+          "_address": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+          "decimals": 18,
+          "name": "WETH"
+        }
+      ]
+    },
+    {"dexId" : "UNI_V3",
+"poolId": "0xc0f05732d1cda6f59487ceeef4390abcad86ea3e",
+      "cumulativeVolumeUSD": "67282469.19374866772885685116873",
+      "tokens": [
+        {
+          "_address": "0x7f465507f058e17ad21623927a120ac05ca32741",
+          "decimals": 18,
+          "name": "Arcadeum"
+        },
+        {
+          "_address": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+          "decimals": 18,
+          "name": "WETH"
+        }
+      ]
+    },
+    {"dexId" : "UNI_V3",
+"poolId": "0xb435ebfe0bf4ce66810aa4d44e3a5ca875d40db1",
+      "cumulativeVolumeUSD": "65981778.87301760816821855966927208",
+      "tokens": [
+        {
+          "_address": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+          "decimals": 18,
+          "name": "WETH"
+        },
+        {
+          "_address": "0xfc5a1a6eb076a2c7ad06ed22c90d7e710e35ad0a",
+          "decimals": 18,
+          "name": "GMX"
+        }
+      ]
+    },
+    {"dexId" : "UNI_V3",
+"poolId": "0xd7c05938c43b48f3b9aed8a5348530a47e53c79b",
+      "cumulativeVolumeUSD": "65572106.55585315896735855523482",
+      "tokens": [
+        {
+          "_address": "0x602eb0d99a5e3e76d1510372c4d2020e12eaea8a",
+          "decimals": 9,
+          "name": "Trident"
+        },
+        {
+          "_address": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+          "decimals": 18,
+          "name": "WETH"
+        }
+      ]
+    },
+    {"dexId" : "UNI_V3",
+"poolId": "0x09ba302a3f5ad2bf8853266e271b005a5b3716fe",
+      "cumulativeVolumeUSD": "65257052.46150278070483131657167",
+      "tokens": [
+        {
+          "_address": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+          "decimals": 18,
+          "name": "WETH"
+        },
+        {
+          "_address": "0xec70dcb4a1efa46b8f2d97c310c9c4790ba5ffa8",
+          "decimals": 18,
+          "name": "Rocket Pool ETH"
+        }
+      ]
+    },
+    {"dexId" : "UNI_V3",
+"poolId": "0xeed3f636e0878cbb968a05fbad77769f52538760",
+      "cumulativeVolumeUSD": "64003712.81304275189705889868154",
+      "tokens": [
+        {
+          "_address": "0x6146520ad1cf3feb064ae8496448215e47661749",
+          "decimals": 9,
+          "name": "PSI"
+        },
+        {
+          "_address": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+          "decimals": 18,
+          "name": "WETH"
+        }
+      ]
+    },
+    {"dexId" : "UNI_V3",
+"poolId": "0x2b734ec7555cb49c755a9495a8d17cd2383926e0",
+      "cumulativeVolumeUSD": "62991438.42300166986240886961306",
+      "tokens": [
+        {
+          "_address": "0x1622bf67e6e5747b81866fe0b85178a93c7f86e3",
+          "decimals": 9,
+          "name": "Umami"
+        },
+        {
+          "_address": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+          "decimals": 18,
+          "name": "WETH"
+        }
+      ]
+    },
+    {"dexId" : "UNI_V3",
+"poolId": "0x05bbaaa020ff6bea107a9a1e06d2feb7bfd79ed2",
+      "cumulativeVolumeUSD": "62758321.60054309340254958488403",
+      "tokens": [
+        {
+          "_address": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+          "decimals": 18,
+          "name": "WETH"
+        },
+        {
+          "_address": "0x83d6c8c06ac276465e4c92e7ac8c23740f435140",
+          "decimals": 18,
+          "name": "HMX"
+        }
+      ]
+    },
+    {"dexId" : "UNI_V3",
+"poolId": "0x2334d412da299a21486b663d12c392185b313aaa",
+      "cumulativeVolumeUSD": "62443899.71541588545967676416507",
+      "tokens": [
+        {
+          "_address": "0x0c4681e6c0235179ec3d4f4fc4df3d14fdd96017",
+          "decimals": 18,
+          "name": "Radiant"
+        },
+        {
+          "_address": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+          "decimals": 18,
+          "name": "WETH"
+        }
+      ]
+    },
+    {"dexId" : "UNI_V3",
+"poolId": "0x0ce541eac2adf14c8eeeb36d588a5db21df9e6c6",
+      "cumulativeVolumeUSD": "60663976.1917127325903240023872",
+      "tokens": [
+        {
+          "_address": "0x088cd8f5ef3652623c22d48b1605dcfe860cd704",
+          "decimals": 18,
+          "name": "VelaToken"
+        },
+        {
+          "_address": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+          "decimals": 18,
+          "name": "WETH"
+        }
+      ]
+    },
+    {"dexId" : "UNI_V3",
+"poolId": "0x1f9129d691fc9a8d6bda147ebd89384a308ccecf",
+      "cumulativeVolumeUSD": "56785657.236052",
+      "tokens": [
+        {
+          "_address": "0x7f91531fc25dd262aebf57e8ebe9a6a6df372e96",
+          "decimals": 9,
+          "name": "WoofWork.io"
+        },
+        {
+          "_address": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+          "decimals": 6,
+          "name": "USDC"
+        }
+      ]
+    },
+    {"dexId" : "UNI_V3",
+"poolId": "0x2a31b63c3a2a2c06e4aaa624071880b72a122fb1",
+      "cumulativeVolumeUSD": "56116876.29408556048967536870155",
+      "tokens": [
+        {
+          "_address": "0x7c8a1a80fdd00c9cccd6ebd573e9ecb49bfa2a59",
+          "decimals": 18,
+          "name": "AICODE"
+        },
+        {
+          "_address": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+          "decimals": 18,
+          "name": "WETH"
+        }
+      ]
+    },
+    {"dexId" : "UNI_V3",
+"poolId": "0xe4d9faddd9bca5d8393bee915dc56e916ab94d27",
+      "cumulativeVolumeUSD": "55921766.063253",
+      "tokens": [
+        {
+          "_address": "0xfa5ed56a203466cbbc2430a43c66b9d8723528e7",
+          "decimals": 18,
+          "name": "agEUR"
+        },
+        {
+          "_address": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+          "decimals": 6,
+          "name": "USDC"
+        }
+      ]
+    },
+    {"dexId" : "UNI_V3",
+"poolId": "0xa62ad78825e3a55a77823f00fe0050f567c1e4ee",
+      "cumulativeVolumeUSD": "55135532.10549930746120357822514997",
+      "tokens": [
+        {
+          "_address": "0x2f2a2543b76a4166549f7aab2e75bef0aefc5b0f",
+          "decimals": 8,
+          "name": "Wrapped BTC"
+        },
+        {
+          "_address": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+          "decimals": 6,
+          "name": "USDC"
+        }
+      ]
+    },
+    {"dexId" : "UNI_V3",
+"poolId": "0x6387b0d5853184645cc9a77d6db133355d2eb4e4",
+      "cumulativeVolumeUSD": "55047859.117728",
+      "tokens": [
+        {
+          "_address": "0xda10009cbd5d07dd0cecc66161fc93d7c9000da1",
+          "decimals": 18,
+          "name": "Dai Stablecoin"
+        },
+        {
+          "_address": "0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9",
+          "decimals": 6,
+          "name": "USDT"
+        }
+      ]
+    },
+    {"dexId" : "UNI_V3",
+"poolId": "0x48b0ab72c2591849e678e7d6f272b75ef9b863f7",
+      "cumulativeVolumeUSD": "54952267.0757035293218255401592",
+      "tokens": [
+        {
+          "_address": "0x4186bfc76e2e237523cbc30fd220fe055156b41f",
+          "decimals": 18,
+          "name": "KelpDao Restaked ETH"
+        },
+        {
+          "_address": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+          "decimals": 18,
+          "name": "WETH"
+        }
+      ]
+    },
+    {"dexId" : "UNI_V3",
+"poolId": "0xce0c908039fdd8eac210e9b6d17ec9003bd83b0e",
+      "cumulativeVolumeUSD": "53458325.70239655670771924449594",
+      "tokens": [
+        {
+          "_address": "0x088cd8f5ef3652623c22d48b1605dcfe860cd704",
+          "decimals": 18,
+          "name": "VelaToken"
+        },
+        {
+          "_address": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+          "decimals": 18,
+          "name": "WETH"
+        }
+      ]
+    },
+    {"dexId" : "UNI_V3",
+"poolId": "0xb529f885260321729d9ff1c69804c5bf9b3a95a5",
+      "cumulativeVolumeUSD": "50741107.08017254927265247016606",
+      "tokens": [
+        {
+          "_address": "0x1a5b0aaf478bf1fda7b934c76e7692d722982a6d",
+          "decimals": 18,
+          "name": "Buffer Token"
+        },
+        {
+          "_address": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+          "decimals": 18,
+          "name": "WETH"
+        }
+      ]
+    },
+    {"dexId" : "UNI_V3",
+"poolId": "0x39007024e17fd49f11382b597867fda2f4a3ef15",
+      "cumulativeVolumeUSD": "42298492.000884",
+      "tokens": [
+        {
+          "_address": "0x1f52145666c862ed3e2f1da213d479e61b2892af",
+          "decimals": 18,
+          "name": "Funny Coin"
+        },
+        {
+          "_address": "0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9",
+          "decimals": 6,
+          "name": "USDT"
+        }
+      ]
+    },
+    {"dexId" : "UNI_V3",
+"poolId": "0x0632742c132413cd47438691d8064ff9214ac216",
+      "cumulativeVolumeUSD": "42199351.11375371040243646844039",
+      "tokens": [
+        {
+          "_address": "0x4945970efeec98d393b4b979b9be265a3ae28a8b",
+          "decimals": 18,
+          "name": "GMD"
+        },
+        {
+          "_address": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+          "decimals": 18,
+          "name": "WETH"
+        }
+      ]
+    },
+    {"dexId" : "UNI_V3",
+"poolId": "0x53c6ca2597711ca7a73b6921faf4031eedf71339",
+      "cumulativeVolumeUSD": "41475393.25980862940940578124585294",
+      "tokens": [
+        {
+          "_address": "0x2f2a2543b76a4166549f7aab2e75bef0aefc5b0f",
+          "decimals": 8,
+          "name": "Wrapped BTC"
+        },
+        {
+          "_address": "0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9",
+          "decimals": 6,
+          "name": "USDT"
+        }
+      ]
+    },
+    {"dexId" : "UNI_V3",
+"poolId": "0x52f9d14bed8ce6536da063aaf274ae2747ef4853",
+      "cumulativeVolumeUSD": "39114066.58970797020524852584456",
+      "tokens": [
+        {
+          "_address": "0x13ad51ed4f1b7e9dc168d8a00cb3f4ddd85efa60",
+          "decimals": 18,
+          "name": "Lido DAO Token"
+        },
+        {
+          "_address": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+          "decimals": 18,
+          "name": "WETH"
+        }
+      ]
+    },
+    {"dexId" : "UNI_V3",
+"poolId": "0x4c4dd10ee3d70758d6bcc924e21b59400460dcd7",
+      "cumulativeVolumeUSD": "36266755.50061772680511548070447",
+      "tokens": [
+        {
+          "_address": "0x0c4681e6c0235179ec3d4f4fc4df3d14fdd96017",
+          "decimals": 18,
+          "name": "Radiant"
+        },
+        {
+          "_address": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+          "decimals": 18,
+          "name": "WETH"
+        }
+      ]
+    },
+    {"dexId" : "UNI_V3",
+"poolId": "0x91308bc9ce8ca2db82aa30c65619856cc939d907",
+      "cumulativeVolumeUSD": "35099907.1270286418893341556989",
+      "tokens": [
+        {
+          "_address": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+          "decimals": 18,
+          "name": "WETH"
+        },
+        {
+          "_address": "0xf97f4df75117a78c1a5a0dbb814af92458539fb4",
+          "decimals": 18,
+          "name": "ChainLink Token"
+        }
+      ]
+    },
+    {"dexId" : "UNI_V3",
+"poolId": "0x681c2a4d924223563dbe35da64e9a0f6a4967fae",
+      "cumulativeVolumeUSD": "35077367.88399079779437269116296",
+      "tokens": [
+        {
+          "_address": "0x2297aebd383787a160dd0d9f71508148769342e3",
+          "decimals": 8,
+          "name": "Bitcoin"
+        },
+        {
+          "_address": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+          "decimals": 18,
+          "name": "WETH"
+        }
+      ]
+    },
+    {"dexId" : "UNI_V3",
+"poolId": "0x47b6de853d181626918eecb1e0ed946a5cf96449",
+      "cumulativeVolumeUSD": "34041735.239296",
+      "tokens": [
+        {
+          "_address": "0xdfb8be6f8c87f74295a87de951974362cedcfa30",
+          "decimals": 18,
+          "name": "EdgeMatrix Computing network"
+        },
+        {
+          "_address": "0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9",
+          "decimals": 6,
+          "name": "USDT"
+        }
+      ]
+    },
+    {"dexId" : "UNI_V3",
+"poolId": "0x99db8dba7b30ab3c6447c4388d81dcc27c5a8b61",
+      "cumulativeVolumeUSD": "32803125.71607",
+      "tokens": [
+        {
+          "_address": "0xd67a097dce9d4474737e6871684ae3c05460f571",
+          "decimals": 18,
+          "name": "GND"
+        },
+        {
+          "_address": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+          "decimals": 6,
+          "name": "USDC"
+        }
+      ]
+    },
+    {"dexId" : "UNI_V3",
+"poolId": "0x31fa55e03bad93c7f8affdd2ec616ebfde246001",
+      "cumulativeVolumeUSD": "32353365.25260206723195659971027",
+      "tokens": [
+        {
+          "_address": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+          "decimals": 18,
+          "name": "WETH"
+        },
+        {
+          "_address": "0xda10009cbd5d07dd0cecc66161fc93d7c9000da1",
+          "decimals": 18,
+          "name": "Dai Stablecoin"
+        }
+      ]
+    },
+    {"dexId" : "UNI_V3",
+"poolId": "0x458bcc519fa8c223e0c1aeb458bb85710f594329",
+      "cumulativeVolumeUSD": "32008403.489316",
+      "tokens": [
+        {
+          "_address": "0x602eb0d99a5e3e76d1510372c4d2020e12eaea8a",
+          "decimals": 9,
+          "name": "Trident"
+        },
+        {
+          "_address": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+          "decimals": 6,
+          "name": "USDC"
+        }
+      ]
+    },
+    {"dexId" : "UNI_V3",
+"poolId": "0x7c06736e41236fecd681dd3353aa77ecd19ea565",
+      "cumulativeVolumeUSD": "31142841.38667184708860778678825",
+      "tokens": [
+        {
+          "_address": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+          "decimals": 18,
+          "name": "WETH"
+        },
+        {
+          "_address": "0xafccb724e3aec1657fc9514e3e53a0e71e80622d",
+          "decimals": 18,
+          "name": "VKA"
+        }
+      ]
+    },
+    {"dexId" : "UNI_V3",
+"poolId": "0x267fcf6cb04eda3c997b7e49d8b7b95382b0ee7b",
+      "cumulativeVolumeUSD": "30507609.066672",
+      "tokens": [
+        {
+          "_address": "0x18c11fd286c5ec11c3b683caa813b77f5163a122",
+          "decimals": 18,
+          "name": "Gains Network"
+        },
+        {
+          "_address": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+          "decimals": 6,
+          "name": "USDC"
+        }
+      ]
+    },
+    {"dexId" : "UNI_V3",
+"poolId": "0x0ad1e922e764df5ab6d636f5d21ecc2e41e827f0",
+      "cumulativeVolumeUSD": "29931367.90108683293122283739482",
+      "tokens": [
+        {
+          "_address": "0x772598e9e62155d7fdfe65fdf01eb5a53a8465be",
+          "decimals": 18,
+          "name": "Empyreal"
+        },
+        {
+          "_address": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+          "decimals": 18,
+          "name": "WETH"
+        }
+      ]
+    },
+    {"dexId" : "UNI_V3",
+"poolId": "0x1edd8c76f74d816f7472be69b174fe7b3084221e",
+      "cumulativeVolumeUSD": "26965080.97866525679672456669942",
+      "tokens": [
+        {
+          "_address": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+          "decimals": 18,
+          "name": "WETH"
+        },
+        {
+          "_address": "0xd67a097dce9d4474737e6871684ae3c05460f571",
+          "decimals": 18,
+          "name": "GND"
+        }
+      ]
+    },
+    {"dexId" : "UNI_V3",
+"poolId": "0x3be3ebc2c4c0e65d444d6254ae9b1486f0d801ee",
+      "cumulativeVolumeUSD": "26797360.19121979824000922465157",
+      "tokens": [
+        {
+          "_address": "0x031d35296154279dc1984dcd93e392b1f946737b",
+          "decimals": 18,
+          "name": "Cap"
+        },
+        {
+          "_address": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+          "decimals": 18,
+          "name": "WETH"
+        }
+      ]
+    },
+    {"dexId" : "UNI_V3",
+"poolId": "0x96f869b2d0682b82fa74480807e1c8804322f538",
+      "cumulativeVolumeUSD": "26693740.66330646420062315424602",
+      "tokens": [
+        {
+          "_address": "0x3a33473d7990a605a88ac72a78ad4efc40a54adb",
+          "decimals": 18,
+          "name": "Tigris"
+        },
+        {
+          "_address": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+          "decimals": 18,
+          "name": "WETH"
+        }
+      ]
+    },
+    {"dexId" : "UNI_V3",
+"poolId": "0x88b553f99bf8cc6c18435c0c19d4d9b433d83645",
+      "cumulativeVolumeUSD": "26102948.915209",
+      "tokens": [
+        {
+          "_address": "0xc47d9753f3b32aa9548a7c3f30b6aec3b2d2798c",
+          "decimals": 18,
+          "name": "TND"
+        },
+        {
+          "_address": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+          "decimals": 6,
+          "name": "USDC"
+        }
+      ]
+    },
+    {"dexId" : "UNI_V3",
+"poolId": "0x4e0a15e2cdc8fde28ee4250c3deec0996190703f",
+      "cumulativeVolumeUSD": "25738689.291387",
+      "tokens": [
+        {
+          "_address": "0xeca66820ed807c096e1bd7a1a091cd3d3152cc79",
+          "decimals": 18,
+          "name": "Ghast"
+        },
+        {
+          "_address": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+          "decimals": 6,
+          "name": "USDC"
+        }
+      ]
+    },
+    {"dexId" : "UNI_V3",
+"poolId": "0x4fd47e5102dfbf95541f64ed6fe13d4ed26d2546",
+      "cumulativeVolumeUSD": "25312578.32036258431503074816199",
+      "tokens": [
+        {
+          "_address": "0x289ba1701c2f088cf0faf8b3705246331cb8a839",
+          "decimals": 18,
+          "name": "Livepeer Token"
+        },
+        {
+          "_address": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+          "decimals": 18,
+          "name": "WETH"
+        }
+      ]
+    },
+    {"dexId" : "UNI_V3",
+"poolId": "0xea263b98314369f2245c7b7e6a9f72e25cb8cded",
+      "cumulativeVolumeUSD": "24541141.25682652944846507638084329",
+      "tokens": [
+        {
+          "_address": "0xfc5a1a6eb076a2c7ad06ed22c90d7e710e35ad0a",
+          "decimals": 18,
+          "name": "GMX"
+        },
+        {
+          "_address": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+          "decimals": 6,
+          "name": "USDC"
+        }
+      ]
+    },
+    {"dexId" : "UNI_V3",
+"poolId": "0xb93f8a075509e71325c1c2fc8fa6a75f2d536a13",
+      "cumulativeVolumeUSD": "23704544.28192492373974979395267",
+      "tokens": [
+        {
+          "_address": "0x5979d7b546e38e414f7e9822514be443a4800529",
+          "decimals": 18,
+          "name": "Wrapped liquid staked Ether 2.0"
+        },
+        {
+          "_address": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+          "decimals": 18,
+          "name": "WETH"
+        }
+      ]
+    },
+    {"dexId" : "UNI_V3",
+"poolId": "0xee9bf1d1e23784067bd7b0b3496f865038b766eb",
+      "cumulativeVolumeUSD": "23698599.6320295047485653685741",
+      "tokens": [
+        {
+          "_address": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+          "decimals": 18,
+          "name": "WETH"
+        },
+        {
+          "_address": "0xd77b108d4f6cefaa0cae9506a934e825becca46e",
+          "decimals": 18,
+          "name": "WINR"
+        }
+      ]
+    },
+    {"dexId" : "UNI_V3",
+"poolId": "0xaf1f6c3485ad1f1640267c402d3f2bf54c0b8dd0",
+      "cumulativeVolumeUSD": "23294239.43622764944075025826775",
+      "tokens": [
+        {
+          "_address": "0x1d987200df3b744cfa9c14f713f5334cb4bc4d5d",
+          "decimals": 6,
+          "name": "REKT"
+        },
+        {
+          "_address": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+          "decimals": 18,
+          "name": "WETH"
+        }
+      ]
+    },
+    {"dexId" : "UNI_V3",
+"poolId": "0xa95b0f5a65a769d82ab4f3e82842e45b8bbaf101",
+      "cumulativeVolumeUSD": "23005831.43267182535723977114177",
+      "tokens": [
+        {
+          "_address": "0x11cdb42b0eb46d95f990bedd4695a6e3fa034978",
+          "decimals": 18,
+          "name": "Curve DAO Token"
+        },
+        {
+          "_address": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+          "decimals": 18,
+          "name": "WETH"
+        }
+      ]
+    },
+    {"dexId" : "UNI_V3",
+"poolId": "0xcb7a3a9e1a057744a60d8103ee66dd28a71c4d75",
+      "cumulativeVolumeUSD": "22729445.861985",
+      "tokens": [
+        {
+          "_address": "0x4e352cf164e64adcbad318c3a1e222e9eba4ce42",
+          "decimals": 18,
+          "name": "MCDEX Token"
+        },
+        {
+          "_address": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+          "decimals": 6,
+          "name": "USDC"
+        }
+      ]
+    },
+    {"dexId" : "UNI_V3",
+"poolId": "0xe8629b6a488f366d27dad801d1b5b445199e2ada",
+      "cumulativeVolumeUSD": "22297064.11226889740544541565395",
+      "tokens": [
+        {
+          "_address": "0x0c880f6761f1af8d9aa9c466984b80dab9a8c9e8",
+          "decimals": 18,
+          "name": "Pendle"
+        },
+        {
+          "_address": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+          "decimals": 18,
+          "name": "WETH"
+        }
+      ]
+    },
+    {"dexId" : "UNI_V3",
+"poolId": "0xf8e5a77a4f187cfb455663b37619257565439f6a",
+      "cumulativeVolumeUSD": "21982760.915325",
+      "tokens": [
+        {
+          "_address": "0x66ba30d5d7c66afd4ed41c3498ec9e20a03a1368",
+          "decimals": 18,
+          "name": "Ethereum FIL"
+        },
+        {
+          "_address": "0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9",
+          "decimals": 6,
+          "name": "USDT"
+        }
+      ]
+    },
+    {"dexId" : "UNI_V3",
+"poolId": "0x1557fdfda61f135baf1a1682eebaa086a0fcab6e",
+      "cumulativeVolumeUSD": "21784690.311425",
+      "tokens": [
+        {
+          "_address": "0x93b346b6bc2548da6a1e7d98e9a421b42541425b",
+          "decimals": 18,
+          "name": "LUSD Stablecoin"
+        },
+        {
+          "_address": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+          "decimals": 6,
+          "name": "USDC"
+        }
+      ]
+    },
+    {"dexId" : "UNI_V3",
+"poolId": "0x689c96ceab93f5e131631d225d75dea3fd37747e",
+      "cumulativeVolumeUSD": "21301714.31298468087488546431473488",
+      "tokens": [
+        {
+          "_address": "0x2f2a2543b76a4166549f7aab2e75bef0aefc5b0f",
+          "decimals": 8,
+          "name": "Wrapped BTC"
+        },
+        {
+          "_address": "0x912ce59144191c1204e64559fe8253a0e49e6548",
+          "decimals": 18,
+          "name": "Arbitrum"
+        }
+      ]
+    },
+    {"dexId" : "UNI_V3",
+"poolId": "0x74d0ae8b8e1fca6039707564704a25ad2ee036b0",
+      "cumulativeVolumeUSD": "21065580.89143294718951961920803",
+      "tokens": [
+        {
+          "_address": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+          "decimals": 18,
+          "name": "WETH"
+        },
+        {
+          "_address": "0x9623063377ad1b27544c965ccd7342f7ea7e88c7",
+          "decimals": 18,
+          "name": "Graph Token"
+        }
+      ]
+    },
+    {"dexId" : "UNI_V3",
+"poolId": "0x7244bcf6226077c393b7c98c0cec6c8c3ce9427e",
+      "cumulativeVolumeUSD": "20514588.21751902089919347370569",
+      "tokens": [
+        {
+          "_address": "0x3d9907f9a368ad0a51be60f7da3b97cf940982d8",
+          "decimals": 18,
+          "name": "Camelot token"
+        },
+        {
+          "_address": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+          "decimals": 18,
+          "name": "WETH"
+        }
+      ]
+    },
+    {"dexId" : "UNI_V3",
+"poolId": "0xfb3488ad6ffa3898102ea79c9fff221e1a6ad91e",
+      "cumulativeVolumeUSD": "20486394.56664221680362075818053",
+      "tokens": [
+        {
+          "_address": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+          "decimals": 18,
+          "name": "WETH"
+        },
+        {
+          "_address": "0xee0b14e8fc86691cf6ee42b9954985b4cf968534",
+          "decimals": 18,
+          "name": "ZenPandaCoin"
+        }
+      ]
+    },
+    {"dexId" : "UNI_V3",
+"poolId": "0x48759302448655c3793ab6e102332bcf04d1f224",
+      "cumulativeVolumeUSD": "20310848.115168",
+      "tokens": [
+        {
+          "_address": "0x8d1c7930f5c5d353a7f812abea53dc8861fc7a79",
+          "decimals": 18,
+          "name": "Gains Network"
+        },
+        {
+          "_address": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+          "decimals": 6,
+          "name": "USDC"
+        }
+      ]
+    },
+    {"dexId" : "UNI_V3",
+"poolId": "0xbc5592c48bf9d4354de4953f57de4f6295dd51b0",
+      "cumulativeVolumeUSD": "19864598.68077632898570572639072",
+      "tokens": [
+        {
+          "_address": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+          "decimals": 18,
+          "name": "WETH"
+        },
+        {
+          "_address": "0xee0b14e8fc86691cf6ee42b9954985b4cf968534",
+          "decimals": 18,
+          "name": "ZenPandaCoin"
+        }
+      ]
+    }
+  ]
+
+}
