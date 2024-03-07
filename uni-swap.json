@@ -1,5 +1,5 @@
 
- [
+{"liquidityPools": [
       {
         "id": "0xc31e54c7a869b9fcbecc14363cf510d1c41fa443",
         "cumulativeVolumeUSD": "48233529358.53141671729708125471864",
@@ -1602,3 +1602,4 @@
       }
     ]
 
+  }
